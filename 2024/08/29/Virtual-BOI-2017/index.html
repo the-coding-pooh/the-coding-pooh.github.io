@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Virtual : BOI 2017 | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Virtual/">
+                            Virtual
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/OI/">
+                            OI
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/BOI/">
+                            BOI
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Virtual : BOI 2017
+            
+            
+        </div>
+        <span class="post-date">
+            8月 29, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Written by pooh at 2024/08/29<br>想不到在開學前我還會逃避事實到再寫一篇，超好笑www。</p>
+<p>格式一樣是抄 <a target="_blank" rel="noopener" href="https://littlecube8152.github.io/posts/virtual-boi-2018/">Little Cube orz Blog</a> 的<br>下面開始就會是大暴雷了。</p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="一些廢話"><a href="#一些廢話" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>這場我是在暑假剛開始的時候 vir 的，前面 vir 了一場 IZhO 然後大家一起被 ad hoc 爆嗆以後來 vir 了這個。</p>
+<div class="fold collapsed">
+    <div class="fold-title">
+        開始暴雷
+    </div>
+    <div class="fold-content">
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://cses.fi/file/6b14126f6b0b54b892b8a731d00f8886e60d8168bb33ba36558c05d2779965cd/">我就不打了啦，我懶</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>一開始讀完馬上知道 pA 是最大團，我知道最大團是 NP 的，但我沒有特別去讀怎麼做 special case，就我又被抓到沒有好好學習。<br>接著是 pB ，讀完馬上發現重心分治可做，只是常數很大，不知道可以拿幾分。<br>然後 pC 一開始讀不懂，讀完以後發現根本是 <a target="_blank" rel="noopener" href="https://www.hackerrank.com/challenges/shortest-path/problem">某題我的愛題</a> 的弱化版，應該會先去做他。</p>
+<p>實際分數: 0 / 0 / 0<br>精神分數: 4 / 100 / 100</p>
+<h3 id="1-10"><a href="#1-10" class="headerlink" title="1:10"></a>1:10</h3><p>刻完 pC 了，交上去一發 AC，也算是沒有愧對我這麼喜歡這個解法啦，去做 pB。</p>
+<p>實際分數: 0 / 0 / 100<br>精神分數: 4 / 100 / 100</p>
+<h3 id="2-34"><a href="#2-34" class="headerlink" title="2:34"></a>2:34</h3><p>pB 寫完重心分治結果吃爆  TLE 了，只有拿到 8 分的子題，仔細一想兩個 log 一個是中心分治一個是 set 沒過好像活該。</p>
+<p>實際分數: 0 / 8 / 100<br>精神分數: 4 / 倒退回 8 / 100</p>
+<p>跑去做點小優化</p>
+<h3 id="2-42"><a href="#2-42" class="headerlink" title="2:42"></a>2:42</h3><p>優化了一點以後拿到了 23 分，但有點燒雞<br>實際分數: 0 / 23 / 100<br>精神分數: 4 / 23 / 100</p>
+<p>又再壓了 20 min 的常但還是沒過。</p>
+<h3 id="3-22"><a href="#3-22" class="headerlink" title="3:22"></a>3:22</h3><p>先跑去把 pA 4 分拿到，順便發現 12 分根本就是亂 BFS 一下就好。<br>實際分數: 4 / 23 / 100<br>精神分數: 16 / 23 / 100</p>
+<h3 id="3-41"><a href="#3-41" class="headerlink" title="3:41"></a>3:41</h3><p>pA 拿好了<br>實際分數: 16 / 23 / 100<br>精神分數: 16 / 23 / 100</p>
+<h3 id="4-08"><a href="#4-08" class="headerlink" title="4:08"></a>4:08</h3><p>pB 想到了 fixed length path II，也就是重心分治被卡常就啟發式合並，然後就過了，而且還挺好寫的。<br>實際分數: 16/ 100 / 100<br>精神分數: 16 / 100 / 100</p>
+<p>後面對 pA 一陣輸出徒勞無功，就沒分數進帳了。</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>一個就是我太習慣看到 NP 問題或歸到 NP 以後就丟掉，導致我根本不會 NP 問題的 special case ，然後大概想到的東西又實作不出來，就是我整個暑假一直覺得我很大的問題，做新東西的能力太爛，尤其是 ad hoc。</p>
+<p>再來就是 pC 我用了離線的解法，雖然我覺得那個做法很優美啦，但 IOI 都是強制在線的，我似乎其實不應該在有存在好的在線做法的狀況下去做離線。因為 pC 外加的 DAG 的性質可以讓他很好的倍增解決，但我還是當下根本沒有好好思考就直接把強化版的問題的解法砸下去了。</p>
+<p>pB 的狀況是我沒有好好考慮重心分治的常數超大這件事，不過後期做的正確決定是想到了虛樹的做法跟啟發式的作法後毅然決然去做啟發式的，從舊的 code 改起來很快，而且實作也簡單很多。</p>
+
+    </div>
+</div>
+
+<h1 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h1><h2 id="一些廢話-1"><a href="#一些廢話-1" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>這場是在 8 / 28 vir 的，兩場基本上代表著我的暑假開始又結束，然後徒勞無功，慘啊。</p>
+<div class="fold collapsed">
+    <div class="fold-title">
+        開始暴雷
+    </div>
+    <div class="fold-content">
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://cses.fi/file/a904421da451fbe1b60f96a27256832a011825dfd097ee40184d15878e837018/">我還是懶</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>pA 看完以後就覺得重心分治可做，接著就發現啟發式合並可做，pB, pC 都超沒感覺，pB 甚至連第一個子題都不會做。</p>
+<p>實際分數: 0 / 0 / 0<br>精神分數: 100 / 0 / 12</p>
+<h3 id="0-56"><a href="#0-56" class="headerlink" title="0:56"></a>0:56</h3><p>刻完 pA 了，啟發式有地方小寫錯，但改一下就 AC 了。</p>
+<p>實際分數: 100 / 0 / 0<br>精神分數: 100 / 0 / 12</p>
+<h3 id="1-26"><a href="#1-26" class="headerlink" title="1:26"></a>1:26</h3><p>pC 分數拿到</p>
+<p>實際分數: 100 / 0 / 12<br>精神分數: 100 / 0 / 12</p>
+<p>然後我就死了，pB 想了很久徒勞無功，感覺就是某種 bitmask 亂搞阿，只能說 day 1 pA 遇到的問題又遇到了，整個暑假毫無長進，pC 有看出來他一定是某個方向伸縮的棋盤，但 ad hoc 力太差不會實作，爆哭QAQ。</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>打得超爛，快被我自己氣死，pB pC 還是中了老問題， ad hoc 力太爛，可能該改刷 ARC AGC 怪 ad hoc 題了。<br>然後 pA CSES 有欸，<a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1752">這題</a>，只能說我北市賽前該再刷一下 CSES 了，不過倒是多學了一次他的貪心解。</p>
+
+    </div>
+</div>
+
+<h1 id="兩天總分"><a href="#兩天總分" class="headerlink" title="兩天總分"></a>兩天總分</h1><div class="fold collapsed">
+    <div class="fold-title">
+        大大暴雷
+    </div>
+    <div class="fold-content">
+        <p>總分 : 328<br>Rank 14， Silver。<br>跟這個人每一題拿的分數都一樣，被七年前的比賽爆嗆欸。<br>好氣喔，打超爛。該回去刷 CSES 跟 ARC AGC 了。</p>
+
+    </div>
+</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/08/26/On-a-New-Algorithm-for-Tree-Decomposition/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2024/08/29/Virtual-BOI-2017/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2024/08/29/Virtual-BOI-2017/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

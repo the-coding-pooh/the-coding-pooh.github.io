@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Virtual : IOI 2019 | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Virtual/">
+                            Virtual
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/OI/">
+                            OI
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/IOI/">
+                            IOI
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Virtual : IOI 2019
+            
+            
+        </div>
+        <span class="post-date">
+            2月 28, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>Written by pooh at 2025/2/28</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這場是跟著 Pacybwaoh 打得，Pacybwoah 我的神。</p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="一些廢話"><a href="#一些廢話" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>2/18 打的，Pacybwoah 是猛男。</p>
+<div class="fold collapsed">
+    <div class="fold-title">
+        開始暴雷
+    </div>
+    <div class="fold-content">
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://oj.uz/problems/source/ioi2019day1">請自行閱讀</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>先從 pA 開始看，感覺前 65 分都是水，剩下還要再想一下，pB 前 40 分拿個樹來亂做就好，後面感覺是 dfs 樹性質但還沒想清楚到底怎麼做，pC 就是主打一個除了暴力以外毫無頭緒的概念，大概 15 分有而以。</p>
+<p>實際分數: 0 / 0 / 0<br>精神分數: 65 / 40 / 15</p>
+<h3 id="0-34"><a href="#0-34" class="headerlink" title="0:34"></a>0:34</h3><p>pA 因為一定可以貪心知道是誰配誰，所以我先隨手亂寫個根據左界的順序去排最後的結果的 code，結果交上去只有 10 分，正解應該不是長這樣，還是要好好想想怎麼做。</p>
+<p>實際分數: 10 / 0 / 0<br>精神分數: 65 / 40 / 15</p>
+<h3 id="1-00"><a href="#1-00" class="headerlink" title="1:00"></a>1:00</h3><p>pA 觀察了一下以後發現首先因為左界在右界右邊的狀況貢獻的交換數是確定的，所以我們可以先把他換過來。接著就是一堆區間，每次可以交換兩個人，讓這些區間變成全部都互斥的最少步驟，那就跟排序是逆序數對那邊一樣去證，發現答案是(區間相交不包含對數) + 2 * (區間包含對數)，兩個都可以用 BIT 掃描線算完。</p>
+<p>實際分數: 10 / 0 / 0<br>精神分數: 100 / 40 / 15</p>
+<h3 id="1-36"><a href="#1-36" class="headerlink" title="1:36"></a>1:36</h3><p>交上去以後因為 BIT 大小開錯吃了 WA，找到以後改掉就 AC 了，開始先寫 pB 的 40 跟想 dfs tree 的性質。</p>
+<p>實際分數: 100 / 0 / 0<br>精神分數: 100 / 40 / 15</p>
+<h3 id="2-34"><a href="#2-34" class="headerlink" title="2:34"></a>2:34</h3><p>寫好了隨便挑一棵樹來做的版本，因為想到之前 AC 說如果有覺得合理的唬爛也可以先寫所以順便也寫了一個每次都把圖 shuffle 然後時間剪枝的版本，但還是只有 40 分，因此決定先去想 pC。</p>
+<p>實際分數: 100 / 40 / 0<br>精神分數: 100 / 40 / 15</p>
+<h3 id="3-14"><a href="#3-14" class="headerlink" title="3:14"></a>3:14</h3><p>pC 看了一下以後發現暴力分有 50 分，需要寫兩份 code，如果在其他都還沒有想法的話我可能會需要提早切喇分的時間去弄他，所以決定先去寫可以拿到 37 的那一份。</p>
+<p>實際分數: 100 / 40 / 0<br>精神分數: 100 / 40 / 50</p>
+<h3 id="4-10"><a href="#4-10" class="headerlink" title="4:10"></a>4:10</h3><p>37 分有了，剩下還有 13 是好做的，pB 也沒有新的想法，所以決定既然已經到喇分的時間那就先去寫 13 分的。</p>
+<p>實際分數: 100 / 40 / 37<br>精神分數: 100 / 40 / 50</p>
+<h3 id="4-35"><a href="#4-35" class="headerlink" title="4:35"></a>4:35</h3><p>13 分的寫好了，過程中 pC 有觀察到一些東西但都不知道怎麼用，倒。</p>
+<p>實際分數: 100 / 40 / 50<br>精神分數: 100 / 40 / 50</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>pB 看解了以後發現我 dfs tree 在想的時候差一步，被我自己氣到，<br>pC 好像該會 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="6.606ex" height="2.451ex" role="img" focusable="false" viewBox="0 -833.2 2919.8 1083.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msup" transform="translate(1152,0)"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mn" transform="translate(975.3,363) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><g data-mml-node="mo" transform="translate(2530.8,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container> 的，這場思考真的不夠好，都只有暴力分。</p>
+<p>最終分數 : 190</p>
+
+    </div>
+</div>
+
+<h1 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h1><h2 id="一些廢話-1"><a href="#一些廢話-1" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>這場很<del>怪</del>酷😔。</p>
+<div class="fold collapsed">
+    <div class="fold-title">
+        開始暴雷
+    </div>
+    <div class="fold-content">
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://oj.uz/problems/source/ioi2019day2">請自行閱讀</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>看到 pA 是 output only，想了個唬爛是蓋個蝸牛，然後發現有遞增或遞減會被嗆，所以又想了一個樓梯，感覺把他們組一組會有奇效? 不知道。<br>pB 看完以後覺得怎麼又是非典型，然後就發現我根本知道兩個 x 跟兩個 y，那就直接蓋減法器跟加法器就好阿，寫完 pA 以後去寫。<br>pC 根本沒感覺，起終點在前後的感覺是拿李超去當 dp 值弄 dijkstra 但不會，而且斜率都一樣感覺一定該有其他事。</p>
+<p>實際分數: 0 / 0 / 0<br>精神分數: ? / 100 / 24</p>
+<p>因為感覺我後面不會想回去動 pA，加上之前聽 8e7 還是誰說 output only 應該要先動，所以就先去寫了蓋個蝸牛的。</p>
+<h3 id="1-03"><a href="#1-03" class="headerlink" title="1:03"></a>1:03</h3><p>蓋了蝸牛以後就拿到了 53.34 分 (yeah!)，中間有些 subtask 低的很慘的感覺就是遞增或遞減，所以打算寫一下樓梯，如果分數還不錯就開溜。</p>
+<p>實際分數: 53.34 / 0 / 0<br>精神分數: 53.34 + ? / 100 / 24</p>
+<p>(寫到這邊剛好是 Fan Project 展示的時間欸，我先去看一下)。</p>
+<h3 id="1-49"><a href="#1-49" class="headerlink" title="1:49"></a>1:49</h3><p>樓梯加上去以後到了 76.89 分，感覺有幾個 subtask 是來卡東西的但我也不想再搞了，先收手去寫 B。</p>
+<p>實際分數: 76.89 / 0 / 0<br>精神分數: 76.89 / 100 / 24</p>
+<h3 id="3-51"><a href="#3-51" class="headerlink" title="3:51"></a>3:51</h3><p>pB 第一版就寫了這麼久，問題是出在我後面才發現我不能戳到空的人，所以我就自己寫了一個會把空的人處理掉的東西，中間又出 8 個 bug 搞了很久，他的 checker 也不是特別好用。 (再加上我那個時候自己沒有寫讓他的 log 可視化的東西，現在看起來是一大敗筆啊)。<br>交上去以後 14 分，瘋掉。</p>
+<p>實際分數: 76.89 / 14 / 0<br>精神分數: 76.89 / 100 / 24</p>
+<h3 id="4-04"><a href="#4-04" class="headerlink" title="4:04"></a>4:04</h3><p>這個時候我很掙扎要不要把 pB 丟掉，然後突然想到我應該要先可視化一下，一弄就發現我減法器的 carry 寫錯，難怪出事，找到以後就 AC 了。</p>
+<p>實際分數: 76.89 / 100 / 0<br>精神分數: 76.89 / 100 / 24</p>
+<h3 id="4-27"><a href="#4-27" class="headerlink" title="4:27"></a>4:27</h3><p>pC 的 Dijkstra 寫好了，交上去只有 10 分 TLE，然後我才想到 subtask 2 他是說跨越的只有 10 個不是說 id 差 10 以內，所以還要掃描縣。</p>
+<p>實際分數: 76.89 / 100 / 10<br>精神分數: 76.89 / 100 / 24</p>
+<h3 id="4-41"><a href="#4-41" class="headerlink" title="4:41"></a>4:41</h3><p>加了掃描線以後 24 分就拿到了。</p>
+<p>實際分數: 76.89 / 100 / 24<br>精神分數: 76.89 / 100 / 24</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>先寫 output only 真的是一個很不錯的選項，不會有一個不知道到底拿幾分的東西懸在那邊很可怕。<br>pA 官解在做的事感覺跟我差不多，但可能有一些東西要判我沒想好。<br>pB 就是抓到我 debug 太笨都不先做可視化，搞到我最後快到喇分時間的時候很緊張感覺很慌。<br>pC 則是放的時間不夠多，感覺至少該有 39。</p>
+<p>然後我覺得我只少被 ojuz 的 output only 要自己吃檔案搞到了 20 min，倒。</p>
+<p>最終分數 : 200.7<br>剛好破兩百欸。</p>
+
+    </div>
+</div>
+
+<h1 id="兩天總分"><a href="#兩天總分" class="headerlink" title="兩天總分"></a>兩天總分</h1><div class="fold collapsed">
+    <div class="fold-title">
+        大大暴雷
+    </div>
+    <div class="fold-content">
+        <p>總分 : 390.7<br>大概是 Rank 40， Silver。<br>該說跟上此打 IOI 比有進步嗎，也不知道，畢竟兩次排名差不多。<br>最大要檢討的點一個是 Day 2 pB debug 速度，我如果可以早點找到的話 pC 可能可以有到 57 的，然後就有金了。<br>同樣一個是 Day 1 pC 放的時間不夠多，感覺我在我覺得比較簡單的題目上放得時間比難的多太多了，導致有些其實不難的子題沒有想好。</p>
+
+    </div>
+</div>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/02/15/Virtual-KOI-TST-2023/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2025/02/28/Virtual-IOI-2019/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2025/02/28/Virtual-IOI-2019/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

@@ -311,7 +311,7 @@ mjx-container[display="true"] + br {
         開始暴雷
     </div>
     <div class="fold-content">
-        <h3 id="0hr-開打"><a href="#0hr-開打" class="headerlink" title="0hr : 開打"></a>0hr : 開打</h3><p>一開始在讀題目的時候看到 A 覺得是簽到題，所以就先去寫了，然後就吃 8 次 WA，一邊吃 WA 等 CD 的時候就發現看起來剩下最水的是 pH 跟 pC，pH 是很簡單的 dp，跟， pC 則是樹 dp 一下，pB 看起來就很像<a target="_blank" rel="noopener" href="https://codeforces.com/contest/2001/problem/D">蕾米廚場的題</a>，身為一個沒在打 cf 的人，我很抱歉，pF 則看起來像是一個有趣的圖論題，dfs tree 只會虧根，感覺就不難。</p>
+        <h3 id="0hr-開打"><a href="#0hr-開打" class="headerlink" title="0hr : 開打"></a>0hr : 開打</h3><p>一開始在讀題目的時候看到 A 覺得是簽到題，所以就先去寫了，然後就吃 8 次 WA，一邊吃 WA 等 CD 的時候就發現看起來剩下最水的是 pH 跟 pC，pH 是很簡單的 dp，pC 則是樹 dp 一下，pB 看起來就很像<a target="_blank" rel="noopener" href="https://codeforces.com/contest/2001/problem/D">蕾米廚場的題</a>，身為一個沒在打 cf 的人，我很抱歉，pF 則看起來像是一個有趣的圖論題，dfs tree 只會虧根，感覺就不難。</p>
 <p>所以我就先跳去寫了 pH，在大概 1:11 的時候 AC，然後我就發現我 begin 跟 end 寫成 rbegin 跟 rend，複製沒有弄乾淨 = =，早知道就 define all(x) 了。</p>
 <h3 id="1-14-200-分"><a href="#1-14-200-分" class="headerlink" title="1:14 200 分"></a>1:14 200 分</h3><p>接著我就去寫 pC ，實做了 25 min 後就一發</p>
 <h3 id="1-39-300-分"><a href="#1-39-300-分" class="headerlink" title="1:39 300 分"></a>1:39 300 分</h3><p>pF 先寫了一個 dfs tree 的版本以後就腦抽忘記隨便找都有偶環也忘記寫 12 分的 subtask 1，然後就一直砸，最後也只有 40 分，像個智障。</p>
@@ -329,7 +329,7 @@ mjx-container[display="true"] + br {
     </div>
     <div class="fold-content">
         <h3 id="0hr-開打"><a href="#0hr-開打" class="headerlink" title="0hr : 開打"></a>0hr : 開打</h3><p>一開始就先把題目看完，第一感覺 pG, pH 是簽到題，pG 亂貪心一下，pH 就等比級數推一下，下一個比較簡單的應該是 pB，雖然實作細節還不清楚但應該會。拿完這三題以後打算拿 pE, pF, pI 去打三小時，pI 我覺得是轉移點單調，pF 整體二分搜，pE 是 777771449 維 BFS，感覺寫起來都挺煩的。pC 感覺亂亂 SPFA 一下會有一些分數，但不會做，反正就按照策略去先寫 BGH 吧。</p>
-<h3 id="1-18-300-分"><a href="#1-18-300-分" class="headerlink" title="1:18 300 分"></a>1:18 300 分</h3><p>前三題都 AC 了，pB 實作時稍微想了一下，但其實不難，講白了是一個很在我的策略裡的步調，但因為覺得 pE, pF, pI 的實作都還沒想清楚有點煩所以打算先寫 pC SPFA 的分數去看看喇幾分，順便把 pI 的實作想清楚。</p>
+<h3 id="1-18-300-分"><a href="#1-18-300-分" class="headerlink" title="1:18 300 分"></a>1:18 300 分</h3><p>前三題都 AC 了，pB 實作時稍微想了一下，但其實不難，講白了是一個很在我的策略裡的步調，但因為覺得 pE, pF, pI 的實作都還沒想清楚有點煩，所以打算先寫 pC SPFA 的分數去看看喇幾分，順便把 pI 的實作想清楚。</p>
 <p>不寫不知道，一寫不得了，59 分阿，怎麼過的我都不知道，秉持著一個他根本是乘一個矩陣，所以相信一定會收斂的信念決定用時間剪枝讓他收斂，結果就過了，真的是賺到。</p>
 <h3 id="1-51-400-分"><a href="#1-51-400-分" class="headerlink" title="1:51 400 分"></a>1:51 400 分</h3><p>這時 pI 的實作也想好了，其實就只需要用個線段樹做掃描線，寫了一下又處理了一下 index (真的有點煩) 後就先交只有 a &gt; b 的 subtask 驗一下 code，然後再改一下就 AC 了</p>
 <h3 id="3-15-500-分"><a href="#3-15-500-分" class="headerlink" title="3:15 500 分"></a>3:15 500 分</h3><p>然後還莫名得搶到了 topcoder，真的詭譎。<br><img src="/../Images/20241210/topcoder.png" alt="topcoder.png"></p>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Blog : TOI 2! &amp; APIO | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Blog/">
+                            Blog
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/TOI/">
+                            TOI
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Blog : TOI 2! &amp; APIO
+            
+            
+        </div>
+        <span class="post-date">
+            5月 25, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一階結束後我順利以 +59.7 進入了二階，接下來就是一路國手線保衛戰了。</p>
+<p>基本上我記得的東西才會被記下來，所以就 8，超級流水帳。</p>
+<p><strong>會有 2025 APIO 跟模考暴雷</strong></p>
+<h1 id="Day-1-4-14"><a href="#Day-1-4-14" class="headerlink" title="Day 1 - 4/14"></a>Day 1 - 4/14</h1><p>照常以 toad 大遲到跟 greg lee 來講話開始，greg lee 一開頭就講說這兩個禮拜後國手就選出來了，然後就要趕快辦簽證跟機票了，不然會來不及。這時我們就問他說蝦那 APIO 怎麼辦，然後就抓包他根本忘記要算 APIO。然後他就講出了:<br><img src="/../Images/20250525/greg_lee_de.png" alt="greg_lee_de.png"></p>
+<p>美好的選訓，就該從 greg lee 耍得開始。</p>
+<p>一樣四人房，這次是跟 leolin，pacybwoah 和 toad 一間。</p>
+<p>toad 感冒了。</p>
+<p>總之第一天晚上就從研究傑斯旅的電視開始，我們看了 guagua 的影片跟緯來日本台，然後我就開始推 leolin 動漫看 (推了女高中生的虛度日常跟江戶前精靈，都很好看啦)，差不多就醬。</p>
+<h1 id="Day-2-4-15"><a href="#Day-2-4-15" class="headerlink" title="Day 2 - 4/15"></a>Day 2 - 4/15</h1><p>早上是 wiwi 回來題解，下午是王炳豐的 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="10.468ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4626.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1752,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2141,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(2585.7,0)"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(3348.7,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(3737.7,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(4237.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container> LCA，總之我不記得我那天除了在飯店做藝術作業以外有做什麼重要的事。</p>
+<h1 id="Day-3-4-16"><a href="#Day-3-4-16" class="headerlink" title="Day 3 - 4/16"></a>Day 3 - 4/16</h1><p>蔡孟宗的 greedy 課，一如往常的好玩，教了一些 Matroid, Submodular 的東西，蔡孟宗留了作業，我跟 brinton 一組，每組都要講一個貪心相關的主題，下個禮拜要上台講。</p>
+<p>然後我感冒了 QAQ，整個體能訓練他們在踢足球的時候我直接躺平狂喝水，總之就感冒，挺不舒服的，還好我爸媽很強馬上幫我把感冒藥變出來。</p>
+<p>這天我超早睡，所以好像也沒幹嘛。</p>
+<h1 id="Day-4-4-17"><a href="#Day-4-4-17" class="headerlink" title="Day 4 - 4/17"></a>Day 4 - 4/17</h1><h2 id="Vir-IOI-20-day-2"><a href="#Vir-IOI-20-day-2" class="headerlink" title="Vir IOI 20 day 2"></a>Vir IOI 20 day 2</h2><p>這天我跟 owoovo 在 vir IOI 20 day 2，我感冒狀態超差，打一個半小時以後就開始睡覺 = =。</p>
+<p>打得很小丑，要不是有 day 1 撐差點沒有銀，一直在一個很想推式子但腦袋根本推不了的狀態，只拿到不用動腦的分數，整個就很丑。</p>
+<p>出去以後我就跟 owoovo 說我覺得我該拿到的分數是他的分數，但總而言之我就沒拿到，自己檢討。</p>
+<h2 id="整房感冒"><a href="#整房感冒" class="headerlink" title="整房感冒"></a>整房感冒</h2><p>我們整房都感冒了，bwoah 跟 leolin 早上直接睡到最後一刻然後帶泡麵去當早餐吃，然後我們四個整天都瘋狂擤鼻涕跟買衛生紙，總之就是一個非場悽慘的戰況。</p>
+<h1 id="Day-5-4-18"><a href="#Day-5-4-18" class="headerlink" title="Day 5 - 4/18"></a>Day 5 - 4/18</h1><h2 id="Vir-IZhO-23-Day-1"><a href="#Vir-IZhO-23-Day-1" class="headerlink" title="Vir IZhO 23 Day 1"></a>Vir IZhO 23 Day 1</h2><p>這天 vir 了 IZhO 23 Day 1，我把水分拿一拿以後就開始耍笨不會加法一整場，但除了不會加法以外其實沒什麼失誤，打的也還可以。只是希望以後不要不會加法就是了。</p>
+<h2 id="棒球課"><a href="#棒球課" class="headerlink" title="棒球課"></a>棒球課</h2><p>這天的體能訓練是棒球課，a.k.a. 看別人把球尻到排球場的課。上到一半我們就被關燈 (欸，怎麼這樣)，結果好像是沒有溝通清楚被以為是來玩的社團，總之我們就被迫在黑暗中打球，接著我就被 owoovo 傳的球 K 到胯下。</p>
+<h1 id="Day-6-4-19"><a href="#Day-6-4-19" class="headerlink" title="Day 6 - 4/19"></a>Day 6 - 4/19</h1><p>這天早上有8e7 回來分享大學生活跟機器學習的東東，但整堂課我的重點都放在到底烤雞大賽是哪個天才發明的。</p>
+<h2 id="心輔課程"><a href="#心輔課程" class="headerlink" title="心輔課程"></a>心輔課程</h2><p>這次的心輔課程超有料，有叫你怎麼紓解壓力，好好呼吸，跟有一個很厲害的催眠術可以讓你三分鐘睡著。我覺得我想為以前看心輔課程沒有感到抱歉，我人生中沒有坐在椅子上睡這麼好過。</p>
+<p>放上一張 toad 在心輔課程接受天啟的照片。<br><img src="/../../Images/20250525/psychic_toad.png" alt="psychic_toad.png"></p>
+<h2 id="桌游"><a href="#桌游" class="headerlink" title="桌游"></a>桌游</h2><p>這次我們有跟輔導員借了桌游來玩，所以我們就整天一直在玩阿瓦隆跟犯人在跳舞 (喔還有在大屏玩 234 players game 啦)。</p>
+<p>附上一張 caido:<br><img src="/../Images/20250525/caido.png" alt="caido.png"></p>
+<h1 id="Day-7-4-20"><a href="#Day-7-4-20" class="headerlink" title="Day 7 - 4/20"></a>Day 7 - 4/20</h1><p>三模。</p>
+<h2 id="三模"><a href="#三模" class="headerlink" title="三模"></a>三模</h2><p>配備照樣是 hershey’s *2 + 特上紅茶 *2 + 水，沒什麼吃早餐。</p>
+<h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>一開始讀完題的想法是 pA 應該是線段樹優化 dp，沒意外的話應該是最簡單的 (對，有意外，我在搞)，pB 順著題目給的常數做應該可以有個 50 幾分，pC 隨手 dilworth 一下就可以有 70，應該是還蠻好做的，pD 前 26 分很好拿，後面應該要有點隨機下去。</p>
+<p>實際分數: 0 / 0 / 0 / 0<br>精神分數: 100 / ~50 / 70 / 26</p>
+<h3 id="1-13"><a href="#1-13" class="headerlink" title="1:13"></a>1:13</h3><p>一小時不碰鍵盤的時候我先把 pB 跟 pC 的實作細節想清楚了，pA 轉移似乎有點問題，還不確定要怎麼處理。所以我就先把 pC 的 70 分用 13 分鐘寫掉了 (一個 BIT 的事)，接著去動 pB。</p>
+<p>實際分數: 0 / 0 / 70 / 0<br>精神分數: 0 / ~50 / 70 / 26</p>
+<h3 id="2-08"><a href="#2-08" class="headerlink" title="2:08"></a>2:08</h3><p>把 pB 前面的分數拿乾淨了，決定先寫 pA 爆搜。</p>
+<p>實際分數: 0 / 50.85 / 70 / 0<br>精神分數: 25 / 63 / 70 / 26</p>
+<h3 id="2-50"><a href="#2-50" class="headerlink" title="2:50"></a>2:50</h3><p>把 pA 爆搜的分數拿到了，開始推 pA 到底可以怎麼轉移 (問題其實是出在我一直都是照右界 sort，然後就會做不動，但其實照左界就好了，我是笨 = =。)</p>
+<p>實際分數: 25 / 50.85 / 70 / 0<br>精神分數: 25 / 63 / 70 / 26</p>
+<h3 id="3-00-3-40"><a href="#3-00-3-40" class="headerlink" title="3:00 ~ 3:40"></a>3:00 ~ 3:40</h3><p>基本上都在試各種 pA 轉移方法，然後找到一堆反例跟處理不了的東西，心態在崩掉的邊緣QAQ。這個時候想到 pD 似乎可以隨機拔掉一個極大獨立集，看剩下的可不可以二著色，所以決定先去寫他。(這個想法的探討可以看 2017 中國國家集訓隊論文集的: 钟知闲 - 浅谈信息学竞赛中的独立集问题，本質上就是猜我靠賽都可以賽到我想要的獨立集，沒太大道裡但相信數據是隨機的會很好。)</p>
+<p>實際分數: 25 / 50.85 / 70 / 0<br>精神分數: 25 / 63 / 70 / 不知道</p>
+<h3 id="4-40"><a href="#4-40" class="headerlink" title="4:40"></a>4:40</h3><p>pD 拿到 61 了，回去想 pA。</p>
+<p>實際分數: 25 / 50.85 / 70 / 61<br>精神分數: 25 / 63 / 70 / 61</p>
+<p>然後我就想一輩子 pA，哭了。</p>
+<p>最後 206.85，出來一聽果然很多人 pA 有 80 或 100，就我在搞，但靠著 pC 跟 pD 還是以 rk. 3 結束。</p>
+<h2 id="晚餐"><a href="#晚餐" class="headerlink" title="晚餐"></a>晚餐</h2><p><img src="/../Images/20250525/food.png" alt="food.png"><br>純粹只是想講很好吃。</p>
+<p>我這個時候還在 emo 我 pA 為什麼耍這麼大的笨，但後來也坦然接受了。</p>
+<h1 id="Day-8-4-21"><a href="#Day-8-4-21" class="headerlink" title="Day 8 - 4/21"></a>Day 8 - 4/21</h1><h2 id="卡車的課"><a href="#卡車的課" class="headerlink" title="卡車的課"></a>卡車的課</h2><p>這天是卡車的課，基本上就是在教幾何，不過與其說教不如說考幾何 (在 uva 上考)，但我因為不是很喜歡計幾所以就沒什麼寫，而且 IOI 也基本上沒在考幾何，所以應該沒差。總之我當了一天計幾苦手以後就跑去跟 leolin 想卡車給的庫題了。</p>
+<h2 id="物奧觀光"><a href="#物奧觀光" class="headerlink" title="物奧觀光"></a>物奧觀光</h2><p>這天我跟 SJY 和 bwoah 跑去偷看物奧國培做實驗的地方，看到他們在用液態氮，我就問王冠宇跟洪靖承說可不可以借我用奶茶做冰棒，然後我就跑回地下室拿了三罐，但後來沒做送物奧的人了。</p>
+<p>晚上他們來傑斯旅找我們聊天，聊到超晚他們才回師大會館，附上師大物理實驗室一張:</p>
+<p><img src="/../Images/20250625/APhO.png" alt="APhO.png"></p>
+<h2 id="Airtag-的未解之謎"><a href="#Airtag-的未解之謎" class="headerlink" title="Airtag 的未解之謎"></a>Airtag 的未解之謎</h2><p>在整個選訓從一階開始，我幾乎每天都會收到手機的訊息說有 airtag 跟我的行蹤一致，可能有人在追蹤我，然後提供我讓那個 airtag 發出聲音的功能。一階的時候我跟洗臉槽還有 maxbrucelen 一直很想知道到底是誰的，但每次按發出聲音也沒聽到有人的在叫，結果這天晚上 guagua 來我們房看動漫的時候我跟他講然後他說喔那是他的阿。</p>
+<p>看來我是要被這個 airtag 追殺到玻利維亞了。</p>
+<h2 id="Bwoah"><a href="#Bwoah" class="headerlink" title="Bwoah"></a>Bwoah</h2><p>這天半夜 bwoah 原本說要看 F1，但她太累了所以就先睡了，結果在起跑的時間 (半夜一點?) 他還是很準時的從床上爬了起來。 SJY 就把平板哪給他，結果 bwoah 一句話都沒講，眼睛也沒有睜開，拿了平板以後又睡回去了。</p>
+<p>他夢遊了。 8</p>
+<h1 id="Day-9-4-22"><a href="#Day-9-4-22" class="headerlink" title="Day 9 - 4/22"></a>Day 9 - 4/22</h1><h2 id="繼續計幾-娛樂"><a href="#繼續計幾-娛樂" class="headerlink" title="繼續計幾 & 娛樂"></a>繼續計幾 &amp; 娛樂</h2><p>繼續是卡車的計幾課，我繼續維持一慣的計幾苦手的風格，一題都沒寫，哈哈。總之我不記得我這天在幹嘛了，但如果我不記得就代表我高機率在玩阿瓦隆或犯人在跳舞。</p>
+<p>今年我二階全部的娛樂都是阿瓦隆、犯人在跳舞跟和 leolin 跟 huangallen 玩大屏，我們在大屏上裝了兩個 234 players game，然後整天在玩跟開發新的功能。我們發現了大屏的電子白板軟體有轉盤功能，所以後來我們就跟輔導員講好我們每天的運動量就用那個轉盤決定，好像是從這天到星期五都是吧，結果我們連續四天都抽到最少量的運動量，完全的勝利。</p>
+<p>總而言之我想講的就是大屏很好玩，明年選訓的各位記得要去玩。</p>
+<h1 id="Day-10-4-23"><a href="#Day-10-4-23" class="headerlink" title="Day 10 - 4/23"></a>Day 10 - 4/23</h1><h2 id="蔡孟宗的課"><a href="#蔡孟宗的課" class="headerlink" title="蔡孟宗的課"></a>蔡孟宗的課</h2><p>蔡孟宗的課 again，這次講的主題是我們許願的，以及各組上去報告作業貪心題，所以過程中就發生了很多很好笑的事。這次的主題講了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="1.176ex" height="1.593ex" role="img" focusable="false" viewBox="0 -694 520 704"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g></svg></mjx-container> dimensional LP (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="8.56ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3783.6 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mo" transform="translate(797.8,0)"><path data-c="2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"></path></g><g data-mml-node="mi" transform="translate(1742.6,0)"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(2505.6,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(2894.6,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(3394.6,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container>)、 communication complexity 、 property testing，後面兩個是因為我們許願說想要聽一些像非典型題目的東西，第一個是因為他要用隨機搶別的教授要講的主題。這堂課上也出現了什麼 leolin 要從高雄坐計程車到師大，但全台灣的計程車都只從桃園機場出發，而且計程車司機開車開到沒油就直接停在路邊不需要回去這一類的怪東西 (toad 的題目背景)，或著是這個:<br><img src="/../Images/20250625/iantsai.png" alt="iantsai.png"></p>
+<p>總之我覺得這天的課很好玩，但除此以外我好像都在耍廢。</p>
+<h1 id="Day-11-12-4-24-25"><a href="#Day-11-12-4-24-25" class="headerlink" title="Day 11 & 12 - 4/24 & 25"></a>Day 11 &amp; 12 - 4/24 &amp; 25</h1><h2 id="耍廢"><a href="#耍廢" class="headerlink" title="耍廢"></a>耍廢</h2><p>這兩天各有一堂王炳豐的課，老慣例講 45 分鐘，表演一些 bit trick，好像就這樣。我實作了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="12.879ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 5692.4 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mo" transform="translate(2040,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2651.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(3651.4,0)"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(4414.4,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(4803.4,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(5303.4,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container> RMQ，我覺得我很棒。就是感覺有做事但沒做什麼事的一天，剩下時間都在大屏上玩撞球或槍戰 (234 players game) 跟打桌球吧，跟 SJY, leolin, huangallen 去大桌球，我跟 leolin 雙打輪換都亂換一通，超好笑。</p>
+<p>禮拜五的時候 AC 有來找我們跟請一些人飲料 (他們有打賭)，以及我整個晚上都在跟 SJY 一起看 How Do You Like Wednesday? (超好看) 跟和 huangallen 一起目睹 leolin 爬樓梯爬到不見。</p>
+<p>仔細想想 2! 似乎比 1! chill 很多，可能是人少而且都很熟嗎? 也可能是因為很多不是第一次進選訓的人把我們帶壞了，總之 2! 感覺比較放<del>肆</del>鬆。幾乎每天晚上都在跟 leolin 看動漫，看 bwoah 做美術作業，然後看 leolin 一步一步把 guagua 好船，以及 toad 始終相信整部劇裡會出現梅毒。</p>
+<p>總之這個時候我是線上 115.9，因此我也正式進入條件戰，接下來就是最後一天 - 四模了。</p>
+<h1 id="Day-13-4-26"><a href="#Day-13-4-26" class="headerlink" title="Day 13 - 4/26"></a>Day 13 - 4/26</h1><p>四模。</p>
+<h2 id="四模"><a href="#四模" class="headerlink" title="四模"></a>四模</h2><p>賽前準備跟前幾次差不多吧，最後一場模考了。</p>
+<h3 id="0-00-1"><a href="#0-00-1" class="headerlink" title="0:00"></a>0:00</h3><p>pA 看完會修改 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="9.1ex" height="2.584ex" role="img" focusable="false" viewBox="0 -892 4022.2 1142"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msup" transform="translate(1152,0)"><g data-mml-node="mi"><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(278,0)"></path><path data-c="67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z" transform="translate(778,0)"></path></g><g data-mml-node="mn" transform="translate(1311,421.1) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(2866.6,0)"><path data-c="2061" d=""></path></g><g data-mml-node="mi" transform="translate(3033.2,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3633.2,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container> 查詢 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="8.112ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3585.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path data-c="6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" transform="translate(278,0)"></path><path data-c="67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z" transform="translate(778,0)"></path></g><g data-mml-node="mo" transform="translate(2430,0)"><path data-c="2061" d=""></path></g><g data-mml-node="mi" transform="translate(2596.7,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3196.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container> 的作法，不好寫但是是可以寫的。 pB 看起來一臉亂貪會過，想了一下感覺很合理，應該會先去拿他。pC 一整個 sparse certificate 的味道，因為覺得那個判 case 應該不簡單 (之前看 cutting pair 的不簡單，感覺這個沒道理簡單多少)。pD 第一子題用傳長度不一樣的可以做到滿，然後直接傳全部輸入過去竟然有 20 分，應該這兩個可以先拿。</p>
+<p>實際分數: 0 / 0 / 0 / 0<br>精神分數: 100 / 100 / 13 / 40</p>
+<h3 id="1-25"><a href="#1-25" class="headerlink" title="1:25"></a>1:25</h3><p>pB 先寫了暴力模擬貪心過了以後就寫了柯朵莉模擬的貪心，然後就過了，開始做 A。</p>
+<p>實際分數: 0 / 100 / 0 / 0<br>精神分數: 100 / 100 / 13 / 40</p>
+<h3 id="2-19"><a href="#2-19" class="headerlink" title="2:19"></a>2:19</h3><p>pA 交上去 WA 了，自己測一測以後發現是我懶標沒弄好，想了一下要怎麼做。</p>
+<p>實際分數: 0 / 100 / 0 / 0<br>精神分數: 100 / 100 / 13 / 40</p>
+<h3 id="3-12"><a href="#3-12" class="headerlink" title="3:12"></a>3:12</h3><p>東改改西調調 pA 過了，這個時候基本上我就完全放鬆了，畢竟以一個系列戰來講應該是剩下兩個都把暴力分拿到就一定可以當國手。</p>
+<p>實際分數: 100 / 100 / 0 / 0<br>精神分數: 100 / 100 / 13 / 40</p>
+<h3 id="3-45"><a href="#3-45" class="headerlink" title="3:45"></a>3:45</h3><p>pD 一開始拿第一子題實作小出 bug，後來弄一弄就拿到了。</p>
+<p>實際分數: 100 / 100 / 0 / 26<br>精神分數: 100 / 100 / 13 / 40</p>
+<h3 id="4-01"><a href="#4-01" class="headerlink" title="4:01"></a>4:01</h3><p>直接傳過去也拿到了，決定先去看 pC 可以拿多少。</p>
+<p>實際分數: 100 / 100 / 0 / 41.79<br>精神分數: 100 / 100 / 13 / 41.79</p>
+<h3 id="4-33"><a href="#4-33" class="headerlink" title="4:33"></a>4:33</h3><p>pC 先拿 13，還在想正圖滿分要怎麼做。</p>
+<p>實際分數: 100 / 100 / 13 / 41.79<br>精神分數: 100 / 100 / 13 / 41.79</p>
+<p>最後也沒多拿分就結束了，收在 254.79, rk 1.。</p>
+<p>2! 也就這樣結束了，剩 APIO。</p>
+<h1 id="APIO"><a href="#APIO" class="headerlink" title="APIO"></a>APIO</h1><h2 id="前一天"><a href="#前一天" class="headerlink" title="前一天"></a>前一天</h2><p>一開始我們約好一群人要去吃燒肉，結果因為我跟 SJY 和 cot 跑去接 APhO 回來的國手時間大燒雞 (延了快 3 小時)，所以我們就拆夥，他們去吃拉麵，我們三個在晚上 8. 多跑去吃燒肉。</p>
+<p>附上燒肉照:<br><img src="/../Images/20250625/yakiniku2.png" alt="yakiniku2.png"></p>
+<p>然後這個時候還收到通知今年不能用線上資料了 (爛死了)，所以我就想說好啊那明天就隨機應變一下。</p>
+<h2 id="當天"><a href="#當天" class="headerlink" title="當天"></a>當天</h2><p>當天規定又改了，變可以用自己以前寫好的? 總之因為一直改所以我就想說算了隨便他，就買了三條黑佳麗就跑去考試了。(因為當天想說突然很想吃黑佳麗，好吃)。</p>
+<p>考試的地方是個奇怪的大樓，但其實在哪都沒差，就考了。</p>
+<h3 id="0-00-2"><a href="#0-00-2" class="headerlink" title="0:00"></a>0:00</h3><p>A 看完以後的第一反應是這什麼大步小步，感覺就想辦發壓一壓，但方向應該就那樣。B 看起來就是無意義包裝很多的東西，光是輸入處理就有點麻煩，可能會比較後面再做。 C 看完第一想法就是 : 出現 10000 這種怪數字欸，感覺就梗題。模擬一下以後就發現每個人配中位數就好，套個 pbds 好了，一開場就去寫寫看。</p>
+<p>實際分數: 0 / 0 / 0<br>精神分數: ~30 / ~20 / 100</p>
+<h3 id="1-10"><a href="#1-10" class="headerlink" title="1:10"></a>1:10</h3><p>開始碰鍵盤以後就先寫 pC，用 pbds 寫 10 行就 AC 了，回去想 A。</p>
+<p>實際分數: 0 / 0 / 100<br>精神分數: ~30 / ~20 / 100</p>
+<h3 id="2-25"><a href="#2-25" class="headerlink" title="2:25"></a>2:25</h3><p>A 想了一小時以後只到 56 分，所以就寫完閃人了。</p>
+<p>實際分數: 56.3 / 0 / 100<br>精神分數: 56.3 / ~20 / 100</p>
+<h3 id="2-42"><a href="#2-42" class="headerlink" title="2:42"></a>2:42</h3><p>把 B 的第一層包裝拆完，發現根本只有圖是鍊跟環才有料，所以先去把輸入處理處理拿到 12 分。</p>
+<p>實際分數: 56.3 / 12 / 100<br>精神分數: 56.3 / ~20 / 100</p>
+<h3 id="2-57"><a href="#2-57" class="headerlink" title="2:57"></a>2:57</h3><p>做完鍊的 case，多拿了 10 分。</p>
+<p>實際分數: 56.3 / 22 / 100<br>精神分數: 56.3 / 22 / 100</p>
+<h3 id="3-24"><a href="#3-24" class="headerlink" title="3:24"></a>3:24</h3><p>做完 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.135ex" height="1.69ex" role="img" focusable="false" viewBox="0 -665 2711.6 747"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1155.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(2211.6,0)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g></g></svg></mjx-container>，拿了分以後開始爆搜 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.135ex" height="1.717ex" role="img" focusable="false" viewBox="0 -677 2711.6 759"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1155.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(2211.6,0)"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g></svg></mjx-container> 的操作。</p>
+<p>實際分數: 56.3 / 46 / 100<br>精神分數: 56.3 / 46 / 100</p>
+<p>然後分數就沒變過了，哈哈。</p>
+<p>總分: 202.3, rk 21., Silver</p>
+<p>在一個離金牌夠近而且都差一個不耍笨的就金了的地方，但 A 沒有好好分析，B <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.135ex" height="1.717ex" role="img" focusable="false" viewBox="0 -677 2711.6 759"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1155.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(2211.6,0)"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g></svg></mjx-container> 輸出沒有按照圖的 permutation (鍊的靠他的測資很爛過的) (toad 說他覺得應該有別的 bug 沒找到)，但反正就醬了，APIO 也就結束了。</p>
+<h1 id="後記"><a href="#後記" class="headerlink" title="後記?"></a>後記?</h1><p>這篇一直到 6 月底才寫好，我很抱歉，很多印象都模糊了。但因為感覺在寫別的之前要先把這篇寫好所以就把他寫完了。</p>
+<p>總之剩下就是國培拉，我也會記錄，然後資讀一整年的心得應該也會寫，剩下就是衝刺 IOI 了。</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/03/20/Blog-TOI-1/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2025/05/25/Blog-TOI-2-APIO/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2025/05/25/Blog-TOI-2-APIO/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

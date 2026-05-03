@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Blog : 2024 NHSPC Mock, Virtual 2023 NHSPC and 2024 NHSPC (2024 全國賽後心得) | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Blog/">
+                            Blog
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/object-Object/">
+                            [object Object]
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/NHSPC/">
+                            NHSPC
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Blog : 2024 NHSPC Mock, Virtual 2023 NHSPC and 2024 NHSPC (2024 全國賽後心得)
+            
+            
+        </div>
+        <span class="post-date">
+            12月 7, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Written by pooh at 2024&#x2F;12&#x2F;07~2024&#x2F;12&#x2F;14<br>開始寫這篇是全國賽當晚，因為還是不會 $1 + \varepsilon$ apx 所以來寫 blog 逃避事實，從北市賽到全國賽這一段時間基本上也都是在 vir 比賽跟做專題，專題進度算挺多的，但寫比賽只讓我覺得我好爛 &#x3D; &#x3D;。</p>
+<p>希望寫完這篇之前我已經想到怎麼弄專題的東東了。</p>
+<p>這段時間基本上最重要的兩場比賽是全國模擬賽跟全國賽，然後中間還有 vir 了 2023 的全國賽，這三場我會特別紀錄一下，剩下的我就想到啥寫啥。</p>
+<h2 id="北市賽後"><a href="#北市賽後" class="headerlink" title="北市賽後"></a>北市賽後</h2><p>北市賽後我們就繼續請公假囉(開心!)，因為剛好全國賽是段考後一周，所以不用考二段(謝謝主任)，我們可以心無旁鶩的備賽，a.k.a. 去台大玩。中間大概去台大玩了兩次，看 Darren 表演當 8。剩下的時間我們三個都在費曼混，我通常是禮拜一四做專題，禮拜二備資讀的課，剩下的時間寫題，講白了準備的時間並不多，但還是有在寫題啦。</p>
+<p>中間某次去台大玩的時候遇到 AC，他說全國賽最好的準備就是不要特別準備，我不知道該不該信啦，反正我是信了。</p>
+<p>講白了這段時間我並不是特別有信心，畢竟我北市賽打的超級爛，真的沒什麼信心我全國賽會比較好，而且覺得如果全國賽又繼續吐的話我就會吃土，畢竟感覺我比賽會給我自己很大的壓力，我個人其實覺得跟蔡孟宗老師做專題我比較放鬆跟開心，因為不限時間的想一個問題的感覺真的比較好，但反正我還是會想要去選訓，然後真的很不想考 TOI 初選，所以還是全國賽拚一下吧。</p>
+<p>最後一次去台大玩是全國模擬賽前的禮拜五，我們在那邊順便幫忙測機，然後發現 special judge 是爛的，順便精神了一下重訪黑白機，然後就到了全國模擬賽的日子了。</p>
+<h3 id="五小時制的暫定策略"><a href="#五小時制的暫定策略" class="headerlink" title="五小時制的暫定策略"></a>五小時制的暫定策略</h3><p>vir OI 的時候我現在是一開始第一個小時先拿簡單的且大塊的分數，中間想三個小時做突破，最後一小時就喇小分數，全國賽我打算一樣的打法，所以其實沒什麼特別的策略。</p>
+<h2 id="12-01-全國模擬賽"><a href="#12-01-全國模擬賽" class="headerlink" title="12.01 - 全國模擬賽"></a>12.01 - 全國模擬賽</h2><p>全國模擬賽前的測機我連 judge 多快都沒有測，講白了是一個很不稱職的測機，但因為我覺得那一天有點累所以就懶了，全國賽有好好測啦，我這個時候在試要怎麼調讓我比賽時候好像不會想吐，結果心因性的好像根本 vir 不出來，倒。</p>
+<p>題目我不想打，你們自己上 cf 去看。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h3 id="0hr-開打"><a href="#0hr-開打" class="headerlink" title="0hr : 開打"></a>0hr : 開打</h3><p>一開始在讀題目的時候看到 A 覺得是簽到題，所以就先去寫了，然後就吃 8 次 WA，一邊吃 WA 等 CD 的時候就發現看起來剩下最水的是 pH 跟 pC，pH 是很簡單的 dp，pC 則是樹 dp 一下，pB 看起來就很像<a target="_blank" rel="noopener" href="https://codeforces.com/contest/2001/problem/D">蕾米廚場的題</a>，身為一個沒在打 cf 的人，我很抱歉，pF 則看起來像是一個有趣的圖論題，dfs tree 只會虧根，感覺就不難。</p>
+<p>所以我就先跳去寫了 pH，在大概 1:11 的時候 AC，然後我就發現我 begin 跟 end 寫成 rbegin 跟 rend，複製沒有弄乾淨 &#x3D; &#x3D;，早知道就 define all(x) 了。</p>
+<h3 id="1-14-200-分"><a href="#1-14-200-分" class="headerlink" title="1:14 200 分"></a>1:14 200 分</h3><p>接著我就去寫 pC ，實做了 25 min 後就一發</p>
+<h3 id="1-39-300-分"><a href="#1-39-300-分" class="headerlink" title="1:39 300 分"></a>1:39 300 分</h3><p>pF 先寫了一個 dfs tree 的版本以後就腦抽忘記隨便找都有偶環也忘記寫 12 分的 subtask 1，然後就一直砸，最後也只有 40 分，像個智障。</p>
+<h3 id="3-00-340-分"><a href="#3-00-340-分" class="headerlink" title="3:00 340 分"></a>3:00 340 分</h3><p>然後就去寫 pB，我是採取無腦前綴和開四棵線段樹的方法，寫了 55 min 才過，然後就到 4 小時了。</p>
+<h3 id="4-00-440-分"><a href="#4-00-440-分" class="headerlink" title="4:00 440 分"></a>4:00 440 分</h3><p>開始喇分模式，先喇 pE 的 21，再喇 pI 的 20，最後在喇 pG 的時候來不及寫完 QAQ。</p>
+<h3 id="比賽結束-481-rk-4-5-Global-Pacybwoah"><a href="#比賽結束-481-rk-4-5-Global-Pacybwoah" class="headerlink" title="比賽結束 : 481 rk 4 (5) (Global &#x2F; + Pacybwoah)"></a>比賽結束 : 481 rk 4 (5) (Global &#x2F; + Pacybwoah)</h3>
+    </div>
+</div>
+
+<p>開版以後其實挺意外的，似乎每個人都覺得自己打很爛但都一起耍笨，然後這場有 8 個人沒有打或沒有好好打，所以其實沒有多大的參考價值。</p>
+<h2 id="12-05-vir-2023-全國賽"><a href="#12-05-vir-2023-全國賽" class="headerlink" title="12.05 - vir 2023 全國賽"></a>12.05 - vir 2023 全國賽</h2><p>特地留到這個時候來 vir，所以一題都沒戳，講白了真的很想知道我如果打去年的能打多好，所以那天就跟 zzw 一起去 vir 了，同時感恩 Pacybwoah 幫我們模擬前三個小時不能傳 pA。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h3 id="0hr-開打"><a href="#0hr-開打" class="headerlink" title="0hr : 開打"></a>0hr : 開打</h3><p>一開始就先把題目看完，第一感覺 pG, pH 是簽到題，pG 亂貪心一下，pH 就等比級數推一下，下一個比較簡單的應該是 pB，雖然實作細節還不清楚但應該會。拿完這三題以後打算拿 pE, pF, pI 去打三小時，pI 我覺得是轉移點單調，pF 整體二分搜，pE 是 777771449 維 BFS，感覺寫起來都挺煩的。pC 感覺亂亂 SPFA 一下會有一些分數，但不會做，反正就按照策略去先寫 BGH 吧。</p>
+<h3 id="1-18-300-分"><a href="#1-18-300-分" class="headerlink" title="1:18 300 分"></a>1:18 300 分</h3><p>前三題都 AC 了，pB 實作時稍微想了一下，但其實不難，講白了是一個很在我的策略裡的步調，但因為覺得 pE, pF, pI 的實作都還沒想清楚有點煩，所以打算先寫 pC SPFA 的分數去看看喇幾分，順便把 pI 的實作想清楚。</p>
+<p>不寫不知道，一寫不得了，59 分阿，怎麼過的我都不知道，秉持著一個他根本是乘一個矩陣，所以相信一定會收斂的信念決定用時間剪枝讓他收斂，結果就過了，真的是賺到。</p>
+<h3 id="1-51-400-分"><a href="#1-51-400-分" class="headerlink" title="1:51 400 分"></a>1:51 400 分</h3><p>這時 pI 的實作也想好了，其實就只需要用個線段樹做掃描線，寫了一下又處理了一下 index (真的有點煩) 後就先交只有 a &gt; b 的 subtask 驗一下 code，然後再改一下就 AC 了</p>
+<h3 id="3-15-500-分"><a href="#3-15-500-分" class="headerlink" title="3:15 500 分"></a>3:15 500 分</h3><p>然後還莫名得搶到了 topcoder，真的詭譎。<br><img src="/../Images/20241210/topcoder.png" alt="topcoder.png"></p>
+<p>接著我去寫 pF，然後耍大笨沒有 AC，想說來寫個小的 subtask 對拍結果聯集過了 &#x3D; &#x3D;。</p>
+<p>只能說運氣太好，後來有找到是 dsu rollback 沒有把 checkpoint pop 掉，到底怎麼過的阿。</p>
+<h3 id="4-30-600-分"><a href="#4-30-600-分" class="headerlink" title="4:30 600 分"></a>4:30 600 分</h3><p>然後 owoovo 就來費曼干擾我們了，我 pE 實作又爛掉喇不到分，所以就整個大小丑。</p>
+<h3 id="比賽結束-600-rk-3-Global"><a href="#比賽結束-600-rk-3-Global" class="headerlink" title="比賽結束 : 600 rk 3 (Global)"></a>比賽結束 : 600 rk 3 (Global)</h3><p>順便檢討一下我 pF 吃大毒，但反正過了。<br>pC 我的作法只要跑 $2V$ 次就收斂了欸，我構的最久的也是 $2V$，可能可以試著證證看?</p>
+
+    </div>
+</div>
+
+<p>只能說這場完全靠賽，也沒有什麼穩定心情的作用，而且實作還很臭。</p>
+<h2 id="12-06-全國賽前一天"><a href="#12-06-全國賽前一天" class="headerlink" title="12.06 全國賽前一天"></a>12.06 全國賽前一天</h2><p>首先我在家裡打包東西跟享受人生，然後我就去費曼找 zzw 跟 cot 耍廢，畢竟要比賽了不想動太多腦，然後孟學就來帶我們去政大，還請我們喝飲料，謝謝孟學。<br>我們接著就去政大參加開幕，也是我第一次會實體見到高雄人們 (對不起我今年 3 月在亂用 codeblocks QAQ)，在到開幕地點之前我在路上跟 cot 討論測機要測啥，我想了一下大概是 set, map, 線段樹, bitset, 階乘跟加法吧，結過最後實戰的時候我只有測 map www。</p>
+<p>到了那邊以後我們先去報到跟領號碼，我的號碼剛好是 No. 1，我就一直說這是我要大一位了的預兆，下面放一張我的帽子、耳機還有號碼的合照。</p>
+<p><img src="/../Images/20241207/number.png" alt="number.png"></p>
+<p>因為會場不能喝東西，所以我們把手搖飲放在外面，然後就進去聽開幕，負責講規則的教授好像不太熟悉規則，所以他還講出了自動交集這一類的話，我個人的想法是自動交集並不是一個新概念，像是 APCS 就是自動交集的。</p>
+<p>測機三題分別如下，我不想加暴雷。</p>
+<h3 id="pA"><a href="#pA" class="headerlink" title="pA"></a>pA</h3><p>給你 $N$ 個格子點，問你是否有超過 $\lceil \frac N 4 \rceil$ 個點共線。<br>$1 \le N \le 10^5, \lvert x \rvert, \lvert y \rvert \le 10^9$</p>
+<h3 id="pB"><a href="#pB" class="headerlink" title="pB"></a>pB</h3><p>Interactive, 告訴你有一個 Hidden Permutation，叫你在 $9n$ 次 compare 詢問 (問兩個位置誰比較大)把它找出來。<br>$n &#x3D; 1024$</p>
+<h3 id="pC"><a href="#pC" class="headerlink" title="pC"></a>pC</h3><p>Output Only, 數獨，跟全國模擬賽的一樣，給你一個 $n^2 \times n^2$ 的還沒做完的數獨，然後叫你填他填越多越好。<br>$1 \le n \le 20$</p>
+<p>首先第一件事我先去把螢幕亮度調低，不然我用到差點瞎掉。</p>
+<p>pA 是隨機，題敘裡就有教你做，所以我就把他時間剪枝做一下就過了。</p>
+<p>然後我就跑去測了 map，結果 key 用 pair 的 1e6 次超過了一秒，有點燒雞。</p>
+<p>然後我就用個 stable sort 把 pB 拿了 95 分以後就開始玩數獨，但也沒做多少測機時間就結束了。</p>
+<p>先來表揚一下 owoovo 在測機的時候玩大的踩地雷差一點就過了，結果猜錯，但理論上一個好的踩地雷地圖應該要是不用猜的，所以表揚 owoovo 手刀 co-NP complete 問題。</p>
+<p>接著表揚一下 cot 在模擬賽測機的時候做出 sudoku，數獨是個 NP complete 問題，所以表揚 cot 手刀 NP complete 問題。</p>
+<p>最後表揚我自己有記得要測電腦的速度，因為我們這一群好像沒有其他人去測，所以表揚我自己手刀測機問題。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        一些個人暴雷小碎念
+    </div>
+    <div class='fold-content'>
+        <p>測機的題目竟然是比賽題目的提示欸，有點洩題的感覺，雖然我是比完賽以後政大的老師講才意識到的。</p>
+
+    </div>
+</div>
+
+<p>然後測機就結束了，還記得孟學幫我們買的飲料嗎，至少我是忘了啦，所以他就被丟在會場外面到隔天。</p>
+<p>我們這個時候就分批上車，然後 guagua 就把東西忘在會場導致我們這一車比較晚出發，那個時候我們還在臭他，結果沒想到我跟 pacybwoah 才是真的把東西忘在會場門口還完全沒有意識到的人。</p>
+<p>到飯店以後我跟 zzw 住一間，然後王以安跟 cot 也來我們這間玩，我們一進去最先注意到的就是浴室有一面是玻璃，超級色。<br><img src="/../Images/20241207/bathroom.png" alt="bathroom.png"></p>
+<p>然後我們吃完飯就去健身房玩，這個時候 owoovo 也加入了，表揚 owoovo 是健身巨砲。<br><img src="/../Images/20241207/gym.png" alt="gym.png"></p>
+<p>然後我們就去便利商店買比賽要吃的東西，我是買 hershey。回到飯店後我為隔天泡了紅茶，跟邊玩 scrabble 邊看 cot 實作 maze 後就去洗澡，順帶一提浴室沒有乾濕分離，所以我只好泡澡，最後再玩了一下 scrabble 就睡了。</p>
+<h2 id="12-07-全國賽當天"><a href="#12-07-全國賽當天" class="headerlink" title="12.07 全國賽當天"></a>12.07 全國賽當天</h2><p>一早起床我就開始反胃，就算吃了胃藥還是沒用，只能說心病真的是不好治，當下只希望我不要像北市賽一樣時間都花在吐上面。早餐我吃的不多，因為我有預感我吃多少就吐多少，到了考場以後我感受到更想吐，最後在他講完規則，正式開考前 3 分鐘我又跑去吐了，跟小丑一樣。</p>
+<p>然後比賽就開始了，題目在這邊 :</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        題目
+    </div>
+    <div class='fold-content'>
+        <p>子題我都忘得差不多了，如果改天題目出來了我再放連結</p>
+<h3 id="pA"><a href="#pA" class="headerlink" title="pA"></a>pA</h3><p>給你兩個長度為 $n$ 的正整數序列 $A, B$，問你對於所有的 $1 \sim n$ 的 permutation $P$，$\sum_{i&#x3D;1}^n \lvert A_i - B_{P_i} \rvert$ 最小可能是多少。</p>
+<p>$1 \le n \le 10^6, \lvert A \rvert, \lvert B \rvert \le 10^9$</p>
+<h3 id="pB"><a href="#pB" class="headerlink" title="pB"></a>pB</h3><p>給你一個長度為 $n$ 的 string $S$，保證 $S$ 的字符集大小 (相異的字母數) $\le 7$，問你如果每次可以將兩個相鄰的字母交換，最少要做幾次操作才可以讓每個相同的字母形成一個區間。<br>例如一開始的 $S$ 是 <code>AABBACBC</code>，答案就是 3，換成 <code>AAABBBCC</code>。</p>
+<p>$1 \le n \le 2 \times 10^5$</p>
+<h3 id="pC"><a href="#pC" class="headerlink" title="pC"></a>pC</h3><p>對於 $n$ 個正整數 $a_1, a_2, \dots, a_n$，$f(x,y)$ 代表是否 $a_x$ 可以透過將 $a_y$ 交換恰好兩位數字得到，例如 $520$ 與 $25$ ，$2486$ 與 $8246$ 就符合這個定義。考慮一張圖 $n$ 個點的圖 $G$，點 $uv$ 之間有邊若且為若 $f(u,v) &#x3D; 1$，問有幾個連通塊與最大的連通塊有幾個點。</p>
+<p>$1 \le n \le 100$<br>$1 \le a_i \le 10^{1000}$</p>
+<p>保證輸入沒有前導零。</p>
+<h3 id="pD"><a href="#pD" class="headerlink" title="pD"></a>pD</h3><p>Output Only<br>你手上有兩種積木，分別長得像<br><code> XO</code><br><code>XX</code><br>跟<br><code>XXXX</code><br>你有一個 $5n \times 5m$ 的方格，每個 $5 \times 5$ 叫做一個區域，每個區域最多有兩個格子被塗黑，且塗黑的格子不八方位相鄰，你要找到一種覆蓋所有沒被塗黑的格子且沒覆蓋到塗黑的格子的方式 (保證存在)，而你的 objective function 是有共用一塊積木的區域 pair 數，你想要最小化她，連續給分。</p>
+<p>有印象的有這些<br>4分 $n&#x3D;1$,$m&#x3D;1$<br>4分 $n&#x3D;1$,$m&#x3D;2$<br>6分 $n&#x3D;2$,$m&#x3D;2$<br>10分 每一區域都是恰好一個塗黑的格子</p>
+<p>$n,m \le 1600$</p>
+<h3 id="pE"><a href="#pE" class="headerlink" title="pE"></a>pE</h3><p>有一個給定的長度為 $n$ 的正整數序列 $a$ 與一個正整數 $k$，每次操作你可以做以下行為 :<br>決定一個長度為 $n$ 的非負整數序列 $d$ ，滿足 $\sum_{i&#x3D;1}^n d_i &#x3D; k$, $\max(d) - \min(d) \le 1$。<br>將所有的 $a_i :&#x3D; a_i + d_i$ ($a_i$ 改成 $a_i + d_i$)。<br>問你是否可以在有限次操作內將 $a$ 裡的每個元素變成相同的，如果可以的話請輸出最小操作次數，否則輸出無解。</p>
+<p>$n \le 10^6, a_i, k \le 10^9$</p>
+<h3 id="pF"><a href="#pF" class="headerlink" title="pF"></a>pF</h3><p>Interactive<br>有一個長度為 $n$ 的點帶權的鍊 (只有 $n - 1$ 條邊且 $1 \le i &lt; n$, $i$ 跟 $i + 1$ 有邊)，你可以詢問兩個 set $A,B$ 哪一個的點權和比較大，允許你在遇處理的時候詢問 $k$ 次，接著支援詢問區間 (只保留編號為 $l$ 到 $r$ 之間的點的子圖) 最大權獨立集，每次詢問可以問 $q$ 次。</p>
+<p>$n \le 1000$, $k &#x3D; 3n, q &#x3D; 1$</p>
+<h3 id="pG"><a href="#pG" class="headerlink" title="pG"></a>pG</h3><p>給你一個長度為 $n + 1$ 的正整數序列 $a &#x3D; (a_0, a_1, \dots, a_n)$，代表一張圖 $G$，$G$ 的構造方法是先加入 $n$ 個 clique $K_{a_1}, K_{a_2}, \dots, K_{a_n}$，然後再加入 $a_0$ 個點，將這 $a_0$ 個點與所有不是自己的點 (包括這 $a_0$ 個點裡的其他人) 建邊，問 $G$ 有幾種定向方式可以讓她是 DAG，模 $10^9+7$ 輸出。</p>
+<p>$n \le 10^6, a_i \le 10^7$</p>
+<h3 id="pH"><a href="#pH" class="headerlink" title="pH"></a>pH</h3><p>給一顆樹，問所有 degree &#x3D; 1 的點倆倆之間的距離的平方的和對 $10^9+7$ 取模。</p>
+<p>$\lvert V \rvert \le 10^6$</p>
+<h3 id="pI"><a href="#pI" class="headerlink" title="pI"></a>pI</h3><p>給一張不帶權的無向圖，要求回答 $Q$ 筆詢問，每筆詢問都是問兩點間的最短距離，且保證每筆詢問的答案都 $\ge \sqrt {\lvert V \rvert}$</p>
+<p>$\lvert V \rvert \le 10^4, \lvert E \rvert \le 10^5, \lvert Q \rvert \le 3 \times 10^4$</p>
+
+    </div>
+</div>
+
+<p>下面就是我比賽的狀況囉，暴雷</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        大暴雷
+    </div>
+    <div class='fold-content'>
+        <h3 id="0hr-比賽開始"><a href="#0hr-比賽開始" class="headerlink" title="0hr : 比賽開始"></a>0hr : 比賽開始</h3><p>比賽一開始我就先開始看題目，看完 pA 以後就覺得他是簽到題，sort 一下就好，所以我就邊調設定邊寫 default code 邊把 pA 寫完了，6 分鐘 AC，然後就去看後面的題目。</p>
+<p>看完 pB 的第一想法是這種問題他就是逆序數對數，看了一下逆序的組合又只有 49 種，所以預處理一下可以 $O(cn + c! \times c^2)$ 做完 ($c$ 是字符集大小)。</p>
+<p>pC 是個直接暴力建圖會好的東西，實作上就補個前綴零到長度一樣就好，$O(n^2 \log a)$。</p>
+<p>看到這邊我以為這次的題目是有按照難度排的，然後我就看到 pD 是 output only，稍微看一下確定他不是來嗆人的就跳過他去看 pE。</p>
+<p>pE 我總覺得有在 Atcoder 上看過，賽後跟 Darren 在聊的時候他也這樣說，反正我那時候是不記得實作細節，只記得跟 exgcd 有關，所以應該是放到中間三小時打 OI 的時候。</p>
+<p>pF 是大詭譎互動題，一看沒什麼感覺也就先跳過他。</p>
+<p>pG 想了一下就發現是 $\prod_{i&#x3D;0}^n a_i! \times \prod_{i&#x3D;1}^n C_{a_i}^{a_i + a_0}$，感覺也是水的。</p>
+<p>pH 我之前有想要在魔鏡出過一顆樹對每個轉軸的轉動慣量，所以我知道一定可以用換根 dp 做，應該是 OI 的部分最簡單的題。</p>
+<p>pI 看完第一眼的想法是他是個全點對最短路問題，基本上沒有辦法比 $O(VE)$ 好，所以就只能看那個 $\sqrt {\lvert V \rvert}$ 能導出什麼 bound 了，感覺也是 OI 的部分。</p>
+<p>所以審完的感覺是 pA, pB, pC, pG 是水分，pE, pH, pI 是 OI，pD, pF 是防破台。<br>那時間分配應該是前四題 1hr，中間三題 3 hr，最後兩題用喇的 1hr。</p>
+<p>然後我就又跑出去吐了。</p>
+<p>吐完回來大概是 25 分，花了 10 min 就把 pB AC，然後 pC 又花了 12 min，接著 pG 花了 14 min，所以成功在 1:01 的時候拿下了 400 分，前面的配速挺穩的。</p>
+<p>順帶一題我在做 pG 的時候第一次忘記把階乘遇處離到 $2 \times 10^7$，還好很快就找到這個 bug。</p>
+<h3 id="1-01-400-分"><a href="#1-01-400-分" class="headerlink" title="1:01 400 分"></a>1:01 400 分</h3><p>接著就進入 OI 的部分，先去寫 pH，因為之前有想過，所以雖然有點複雜但寫了差不多 45 min 就寫完了，然後交上去只過點數超小的 subtask，一看就是有地方忘記取模，看了一下就找到問題，AC。</p>
+<h3 id="1-57-500-分"><a href="#1-57-500-分" class="headerlink" title="1:57 500 分"></a>1:57 500 分</h3><p>是個我喜歡的節奏，這個時候我再看了一次 pI，首先我先快速的想了一下我會什麼不是 $O(VE)$ 的全點對最短路嗎，好像只會詢問分治，很明顯不管用，接著我又發現 $\sqrt V$ 根本導不出什麼 bound，所以我就想了有什麼東西是一個夠大的佔比就很爽的，沒意外就是隨機。</p>
+<p>類似詢問分治那個用通過這個點去減少重複算浪費的時間的方法，假設我現在隨機的選了 $K$ 個點做單點源 BFS，那對於一次詢問我沒有挑到這條最短路徑上的點的機率是 $(1 - \frac 1 {\sqrt V})^K$，挑個 $K &#x3D; 1000$ (實際上要分析應該要取什麼 $\sqrt V \log V$ 但隨便啦) 就會發現超級低，所以我只要做 $K$ 次單點源 BFS，然後每次詢問我就對我這 $K$ 個點源 $(v_1, v_2, \dots v_K)$ 取 $\min(dist(v_1, s), dist(v_1, t))$ 就高機率會是 $s,t$ 的最短路了。</p>
+<p>然後我就去實作，整個想 + 寫的時間只花了我 15 min，然後就 AC 了。</p>
+<h3 id="2-12-600-分"><a href="#2-12-600-分" class="headerlink" title="2:12 600 分"></a>2:12 600 分</h3><p>挺不錯的節奏，個人當下的體感是感覺最後一等線會是 700 多，二等線 600。所以還不到半場就感覺可以穩進選訓是挺不錯的。</p>
+<p>然後我就去好好想 pE，pE 一個比較 trivial 的式子是假設最後做了 $y$ 次操作，讓 $a$ 中的每個元素都變 $x$，那顯然 $nx - ky &#x3D; \sum a$，這就是我想要的 exgcd 的式子。</p>
+<p>因此有解的條件應該是 $a \mod \gcd(n,k) &#x3D; 0$，必要性是貝祖，充分性我感性是用 Hall 大概感覺一下。</p>
+<p>然後我就先推了 exgcd 的式子，寫好 exgcd，接著就是最小化 $y$ 需要做的事了，一個顯然的界是 $x \ge max(a)$ 跟 $y \ge \max(a) - \min(a)$，剩下的應該就直接爆減。</p>
+<p>寫到這邊的時候是 2:55 ，交上去以後 WA 了。</p>
+<p>接著我就仔細的想了一下 $k &#x3D; 1$ 的 case，發現第二個界應該要變成 $y + min(a) \ge x$，然後用 Hall 證了一下他的正確性，結果測一測發現 WA，再看了很久才發現我一開始就忘記把 $k$ 拿去 mod $n$ 了。</p>
+<p>對，我就這樣耍了快一小時的笨，debug 的同時去構 pD，發現的時候已經 3:47 了，交上去以後 73 分，WA。</p>
+<p>73 分是 $a \le 10^6$ 的 subtask，所以我就仔細的想了一下跟看了一下，然後我就跳題了 (欸?)。</p>
+<p>我跑去寫 pF，然後 4:07 的時候拿到了前面的 subtask。</p>
+<h3 id="4-07-708-分"><a href="#4-07-708-分" class="headerlink" title="4:07 708 分"></a>4:07 708 分</h3><p>寫完 pF 以後我回去構 pD 跟 debug pE，然後我就想說看起來是溢位，所以我就開了 int128，然後就過了，好欸。</p>
+<p>接著我就跑出去吐了，也把我的一等一吐掉了QAQ。</p>
+<h3 id="4-32-735-分"><a href="#4-32-735-分" class="headerlink" title="4:32 735 分"></a>4:32 735 分</h3><p>這個時候我手上有 pD 的 6 分跟還在構 10 分，結果我一直在外面吐，吐到一半回去還交錯檔案想說怎麼沒有拿到分，然後又出去吐，吐完以後坐了一下才意識到我交錯檔案，發現的時候已經剩一分鐘了，最後是在結束前 15 秒上傳的，如果中間沒有亂吐就一等一了，因為 guagua 是 53 分傳的 QAQ。</p>
+<h3 id="比賽結束-741-rk-1"><a href="#比賽結束-741-rk-1" class="headerlink" title="比賽結束 : 741 rk 1"></a>比賽結束 : 741 rk 1</h3><p>講白了一直到最後一小時我的感覺都是前五應該都 700，沒想到對大家來講 pI 是比 pE 難的，然後很多人也覺得 pB 或 pG 是難的，我個人體感是簡單到難 ACBGIHE，有點意外一等獎的剩下兩位 pI 都是用壓常過的，後來才知道 pI 是蔡孟宗出的，譴責壓常跟他亂開值域。</p>
+<p>題外話是我搶到了 pB 跟 pI 的首殺，但嘔吐還是害我少了 10 分左右，我後來回去有把一個區域有一個塗黑的構完，大概長下面這樣。<br><img src="/../Images/20241207/cover.png" alt="cover.png"><br>不難構，如果我 pE 沒有耍這麼久的笨跟沒跑去吐浪費時間應該可以拿到的，但總之這也告訴了我我接下來首要要解決的應該是我的心病吧。</p>
+<p><a target="_blank" rel="noopener" href="https://sorahisa-rank.github.io/nhspc-fin/2024/ranking/">板</a></p>
+
+    </div>
+</div>
+
+<p>比賽結束後就是聽政大的招生，然後就拿到一萬五，晚上我們一團人一起去吃第 8 次和民，我跟 leolin 3:2 把帳單付掉，接著就回家開始寫這一篇跟踏上完成我的 15 天卡皮巴啦的祭品的路。</p>
+<p>這次全國賽的結果我挺意外的，有很多我預期會打很好的人反而沒有打很好，不過這似乎也在告訴我我明年是真的有機會可以拚到國手的，希望我可以順利成為國手吧。</p>
+<p>最後付上一個別人給我的有趣東西，讓我紀念一下。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        一些個人的想法，有點自肥?
+    </div>
+    <div class='fold-content'>
+        <p>我一直沒打什麼線上賽，我覺得我避戰的一個很大的原因是我對競賽這種東西其實有一種本能性的厭惡的感覺，尤其是我越在意的東西越有這種感覺，這是我目前最想處理掉的問題，畢竟一直吐也不是辦法啊，但打線上賽給我的感覺真的跟 vir OI 差很多，線上賽有一種非常不舒服的感覺，不像 vir OI 耍笨是純粹覺得我自己很爛，線上賽耍笨是有一種實體的不舒服感的。</p>
+<p>不過剛好看到 dreamoon 講的這個 :<br><img src="/../Images/20241207/dreamoon.png" alt="dreamoon.png"><br>我想說的是，我是綠色。<br><img src="/../Images/20241207/me.png" alt="me.png"></p>
+<p>我之後應該會繼續以戳題跟 vir OI 為主吧，畢竟我覺得我真的不適合打線上賽，但打 OI 還是好玩的，只是有點傷身。</p>
+
+    </div>
+</div>
+
+<p>沒意外今年最後的大事就結束了，寫到這邊的時候我還是不會做專題，而且已經半夜兩點了，我該睡了。</p>
+<p>Upd : 為什麼我半夜寫文章贅字這麼多 &#x3D; &#x3D;。</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/01/28/Virtual-JOIOC-2020/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/12/07/Blog-2024-TPISAC-and-CKCon/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2024/12/07/Blog-2024-NHSPC-Mock-Virtual-2023-NHSPC-and-2024-NHSPC/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2024/12/07/Blog-2024-NHSPC-Mock-Virtual-2023-NHSPC-and-2024-NHSPC/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

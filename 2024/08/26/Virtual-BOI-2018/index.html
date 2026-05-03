@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Virtual : BOI 2018 | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Virtual/">
+                            Virtual
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/OI/">
+                            OI
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/BOI/">
+                            BOI
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/object-Object/">
+                            [object Object]
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Virtual : BOI 2018
+            
+            
+        </div>
+        <span class="post-date">
+            8月 26, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Written by pooh at 2024&#x2F;08&#x2F;27<br>在暑假的末端 vir 完了 BOI 2018，題目有些蠻有趣的，大概是我逃避事實的其中一環。<br>也算是我從 4 月初後爆刷 atcoder 的驗收，希望有進步一些。</p>
+<p>格式我是抄 <a target="_blank" rel="noopener" href="https://littlecube8152.github.io/posts/virtual-boi-2018/">Little Cube orz Blog</a> 的<br>下面開始就會是大暴雷了。</p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="一些廢話"><a href="#一些廢話" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>這場我是在從英國回台灣的飛機上 vir 的，因為馬航有提供免費的網路，結果因為我在飛機上沒睡覺所以回來時差超難調。然後一開始前半小時還想說還算舒服，結果後面就遇到超大亂流，超想吐，只好提早放棄。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://cses.fi/file/a6f5102dbde70511b4692e5e1a166843039b2b723d709c5f41cdff427b7dc37a/">請自行閱讀</a></p>
+<p>對不起我懶 QAQ</p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>先讀了 pA ，腦中的想法大概是很像水母圖上的帶權匹配? 實作細節還沒想好，所以就先繼續讀。<br>接著看到 pB 發現他是超水的雙指針，所以應該等等會先寫他。<br>再來看到 pC 就發現一整個被嗆，他根本就是三維版的<a target="_blank" rel="noopener" href="https://tioj.ck.tp.edu.tw/problems/1926">人生低潮</a>，被抓到沒有好好補題，順帶一題那一題讓我痛苦到我甚至跑去改名，然後我還是不明白官解為什麼是好的，結果又遇到 &#x3D; &#x3D;，所以只會做一維的。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 0<br>精神分數: 21 + ? &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<h3 id="0-28-0-32"><a href="#0-28-0-32" class="headerlink" title="0:28 &amp; 0:32"></a>0:28 &amp; 0:32</h3><p>pB 大概只花了 15 min 就寫好了，一上傳竟然吃 WA (BTW 飛機上網路慢到大概 0:30 才看到 verdict)，緊急 debug 一下一看就發現我不等號打錯，改了就 AC 了。</p>
+<p>實際分數: 0 &#x2F; 100 &#x2F; 0<br>精神分數: 21 + ? &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<p>這時候我覺得我對 pA 的細節還要稍微想一下，所以先去做了 pC 的 local test 跟 10 分的簡單子題</p>
+<h3 id="1-24"><a href="#1-24" class="headerlink" title="1:24"></a>1:24</h3><p>pC Local test 寫完，10分拿到，回去好好想 pA 的 Case。</p>
+<p>實際分數: 0 &#x2F; 100 &#x2F; 10<br>精神分數: 21 + (79 感覺快出來了) &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<p>中間跑去吐了一下，亂流真的太大了。</p>
+<h3 id="2-56"><a href="#2-56" class="headerlink" title="2:56"></a>2:56</h3><p>克服了亂流以後發現 pA 根本跟 <a target="_blank" rel="noopener" href="https://tioj.ck.tp.edu.tw/problems/2332">關卡地圖</a> 一個梗 (雖然好像在一開始就大概知道了)，所以先寫了只有樹的子題。<br>實際分數: 29 &#x2F; 100 &#x2F; 10<br>精神分數: 100 &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<h3 id="3-13"><a href="#3-13" class="headerlink" title="3:13"></a>3:13</h3><p>加上環爛掉了，大出事<br>實際分數: 29 &#x2F; 100 &#x2F; 10<br>精神分數: 100 &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<h3 id="3-49"><a href="#3-49" class="headerlink" title="3:49"></a>3:49</h3><p>決定先去拿暴力來對拍<br>實際分數: 29 + 21 &#x2F; 100 &#x2F; 10<br>精神分數: 100 &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<h3 id="4-24"><a href="#4-24" class="headerlink" title="4:24"></a>4:24</h3><p>對完拍也把 case 判乾淨了。<br>實際分數: 100 &#x2F; 100 &#x2F; 10<br>精神分數: 100 &#x2F; 100 &#x2F; 10 + (22 要黃金比例搜)</p>
+<p>然後到這邊我就覺得暈到該休息了，所以我棄了 pC 的 22 分。</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>首先就是被抓到沒有好好補題，跟實作黃金比例搜不夠熟所以不敢試。<br>不然 pC 至少會有 63 分。<br>接著就是 pA 的實作還是沒有想清楚，如果不是有對拍這個能力我就爆炸了，而且實作也太慢了。<br>最後就是還是應該好好睡覺的 &#x3D; &#x3D;。</p>
+<p>最終分數 : 210<br>好像就普通，跟我一起 vir 的人好像也是差不多或一樣的分數，pC真的太鬼了。</p>
+
+    </div>
+</div>
+
+<h1 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h1><h2 id="一些廢話-1"><a href="#一些廢話-1" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>這場我跟 Day 1 差了一個禮拜 vir，然後這個時候我的房間還在漏水，所以我的床佔據了我的地板，造成我的椅子沒地方放，所以我只好趴在床板上打。<br>我還在床板上打了 CF 跟一堆東東，現在還在上面打這篇 blog。<br>希望漏水快點好。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://cses.fi/file/aa15e5c596748c9a28ae616f07ed69a8bbef24706929350e3f1b1e189c2cd67c/">我還是懶</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>讀完 pA 以後感覺就是我不會的貪心，性質很多又完全沒有性質的感覺。<br>pB 讀完以後直覺馬上想到 bitset 可以做到 $O(\frac {N^2M} \omega)$，只是應該只能到 subtask 2。<br>pC 讀完後就感覺是 DP，然後可能找好方法合併就好，沒有想的很細節。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 0<br>精神分數: 13 &#x2F; 46 &#x2F; 70</p>
+<h3 id="0-20"><a href="#0-20" class="headerlink" title="0:20"></a>0:20</h3><p>這大概是讀題之後的 8 min，我先把 pB 跟 pC 的輸入吃好。突然發現 pB 對於每個 ATCG 維護的 bitset 其實可以換成一個 hash 值，然後每個人的二維 bitset 也可以換成一個 hash 值，複雜度秒便 $O(NM)$ ，所以就去做了。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 0<br>精神分數: 13 &#x2F; 100 &#x2F; 70</p>
+<h3 id="0-35"><a href="#0-35" class="headerlink" title="0:35"></a>0:35</h3><p>pB 一發 AC。<br>改去做 pC</p>
+<p>實際分數: 0 &#x2F; 100 &#x2F; 0<br>精神分數: 13 &#x2F; 100 &#x2F; 70 + (30 bitmask 吧)</p>
+<h3 id="1-32"><a href="#1-32" class="headerlink" title="1:32"></a>1:32</h3><p>pC 先寫了 bitmask DP 版，結果只有 70，感覺自己假解了，跑去換奇怪的 ad hoc 作法。</p>
+<p>實際分數: 0 &#x2F; 100 &#x2F; 70<br>精神分數: 13 &#x2F; 100 &#x2F; 70 + (30?)</p>
+<h3 id="2-10"><a href="#2-10" class="headerlink" title="2:10"></a>2:10</h3><p>中間一度 pC 又重拿了一次 70 分。結果發現我 bitmask DP 只是大小開錯而已 &#x3D; &#x3D;。 改了一下就 AC 了。</p>
+<p>實際分數: 0 &#x2F; 100 &#x2F; 100<br>精神分數: 13 &#x2F; 100 &#x2F; 100</p>
+<h3 id="2-38"><a href="#2-38" class="headerlink" title="2:38"></a>2:38</h3><p>pA 有一個我自己覺得有點蝦的貪心，不敢寫。先去拿了暴力 13 分。</p>
+<p>實際分數: 13 &#x2F; 100 &#x2F; 100<br>精神分數: 13 &#x2F; 100 &#x2F; 100</p>
+<p>然後我就覺得該放棄了，跑去想專題，明明就有一個貪心想法然後覺得是爛的就不敢寫，混到了大概3:10才回來想。</p>
+<h3 id="3-20"><a href="#3-20" class="headerlink" title="3:20"></a>3:20</h3><p>證了一下我的貪心在不是環的狀況下是對的!<br>然後就去寫了<br>實際分數: 13 &#x2F; 100 &#x2F; 100<br>精神分數: 13 + 19 &#x2F; 100 &#x2F; 100</p>
+<h3 id="3-37-3-40"><a href="#3-37-3-40" class="headerlink" title="3:37 &amp; 3:40"></a>3:37 &amp; 3:40</h3><p>19 分拿到了，花了一點時間手動聯集<br>實際分數: 32 &#x2F; 100 &#x2F; 100<br>精神分數: 32 &#x2F; 100 &#x2F; 100</p>
+<p>但這個時候似乎是受到不知道誰在關卡地圖的唬爛的啟發還是 IOIC 的隨機課有認真聽，我突然覺得可能我亂把環變成練可能可以喇到一些分數。</p>
+<h3 id="3-54"><a href="#3-54" class="headerlink" title="3:54"></a>3:54</h3><p>唬爛過了 &#x3D; &#x3D;。<br>完全沒想到的狀況。就這樣300了，有點開心。</p>
+<p>實際分數: 100 &#x2F; 100 &#x2F; 100<br>精神分數: 32 &#x2F; 100 &#x2F; 100</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>首先 pC 花了超出該花的時間太多了，反倒是 pB 根本是賺到，因為才剛在專題遇到用 hash 證明某個東西，然後想法有點類似才讓我可以想這麼快。<br>接著是中間注意力渙散這件事，我覺得是因為我練的 OI 還不夠多，可能要再多打幾場，然後 pA 超過 13 分的根本都是撿來的，這也告訴了我唬爛真的是有用的。</p>
+<p>最後是很意外的就這樣莫名其妙破台了，甚至比當年最快破台的還快，有點爽。<br>最終分數 : 300<br>好像大家 day 2 都打的比 day 1 爛，聽到很多 13 + (19) &#x2F; 46 &#x2F; 100 的。</p>
+
+    </div>
+</div>
+
+<h1 id="兩天總分"><a href="#兩天總分" class="headerlink" title="兩天總分"></a>兩天總分</h1><div class='fold collapsed'>
+    <div class='fold-title'>
+        大大暴雷
+    </div>
+    <div class='fold-content'>
+        <p>總分 : 510<br>大概是 Rank 3， Gold。<br>但如果 day 1 pA 我有好好補題的話就可以到 Rank 1 了，不過如果正常其實 day 2 我大概只能拿 213。<br>只能說還好我有好好唬爛。<br>感覺就是注意力很不足跟想  case 還是太爛了，我 day 2 pA 的貪心好像改一改就是正解的貪心了，首要加強的應該是想 case 實作。可能要練一些大實作或甚至是 ad hoc，然後 OI 可能要多 vir 一點。</p>
+
+    </div>
+</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2024/08/26/On-a-New-Algorithm-for-Tree-Decomposition/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2024/08/26/Virtual-BOI-2018/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2024/08/26/Virtual-BOI-2018/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

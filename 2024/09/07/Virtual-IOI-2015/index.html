@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Yen Tzu-Chiao">
+
+
+
+
+
+
+
+<title>Virtual : IOI 2015 | the coding pooh&#39;s blog</title>
+
+
+
+    <link rel="icon" href="/favico.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+  <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo.jpg" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Virtual/">
+                            Virtual
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/OI/">
+                            OI
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/object-Object/">
+                            [object Object]
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/IOI/">
+                            IOI
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Virtual : IOI 2015
+            
+            
+        </div>
+        <span class="post-date">
+            9月 7, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Written by pooh at 2024&#x2F;09&#x2F;07 &amp; 2024&#x2F;09&#x2F;13</p>
+<p>開學了，要準備校內賽，好緊張QAQ。</p>
+<p>AC 建議我可以 vir IOI 了，所以來 vir 了一場。</p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="一些廢話"><a href="#一些廢話" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>不知道要講啥，開學了好累QAQ。</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://oj.uz/problems/source/170">請自行閱讀</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>先從 pC 開始看，順便熟悉一下 grader 的操作方式，因為方便所以我選擇用 wsl + vim 打，稍微調了一下後就大概就去寫超級水的 C 的 34 分了。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 0<br>精神分數: 0 &#x2F; 0 &#x2F; 34</p>
+<h3 id="0-35"><a href="#0-35" class="headerlink" title="0:35"></a>0:35</h3><p>分數到手去看 pB，看了以後其實有點不想做，好 adhoc 喔，但還是稍微想了一個 9 次的，然後就去寫了。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 34<br>精神分數: 0 &#x2F; 誰知道 &#x2F; 34</p>
+<h3 id="1-27"><a href="#1-27" class="headerlink" title="1:27"></a>1:27</h3><p>pB 弄好了，在弄得時候順便逃避事實看了一下 pA，一時之間只有暴力分的想法。</p>
+<p>實際分數: 0 &#x2F; 45.45 &#x2F; 34<br>精神分數: 20 &#x2F; 45.45 &#x2F; 34</p>
+<h3 id="1-57"><a href="#1-57" class="headerlink" title="1:57"></a>1:57</h3><p>暴力分拿到，再看了一下就發現可以 $O(NK)$ dp ，如果是對的剩下就只是優化的事而已，不難。<br>實際分數: 20 &#x2F; 45.45 &#x2F; 34<br>精神分數: 50 &#x2F; 45.45 &#x2F; 34</p>
+<h3 id="2-18"><a href="#2-18" class="headerlink" title="2:18"></a>2:18</h3><p>拿到 50 了，對於破了 100 分有點開心，然後就發現根本可以單調對列優化亂做，就跑去寫了。<br>實際分數: 50 &#x2F; 45.45 &#x2F; 34<br>精神分數: 100 &#x2F; 45.45 &#x2F; 34</p>
+<h3 id="2-45"><a href="#2-45" class="headerlink" title="2:45"></a>2:45</h3><p>單調對列稍微調一下就過了，回去看 pC (感覺 pB 很沒救)<br>實際分數: 100 &#x2F; 45.45 &#x2F; 34<br>精神分數: 100 &#x2F; 45.45 &#x2F; 34</p>
+<p>感覺 pC 就是分塊阿，然後就想了一個三個 log 的做法，被嗆 &#x3D; &#x3D;。</p>
+<h3 id="3-40"><a href="#3-40" class="headerlink" title="3:40"></a>3:40</h3><p>突然發現 pC 根本就是 JOI Ho 2024 pD (真的嗎? 其實可能只是我那個時候覺得我可以用某種排容判，弄一弄就發現我根本在做 Hall，然後我學過的 Hall 就只有 pacybwoah 教我的這一題)，然後我就跑去小的 case Hall 亂做了，然後因為不想寫持久化線段樹所以 BIT 套 vector 亂搞，想說拿個 77 分吧，因為我也不會做大 case 比 $O(N \log N)$ 好的，最後的 subtask 一臉不會過的樣子。</p>
+<p>實際分數: 100 &#x2F; 45.45 &#x2F; 34<br>精神分數: 100 &#x2F; 45.45 &#x2F; 77</p>
+<h3 id="4-08"><a href="#4-08" class="headerlink" title="4:08"></a>4:08</h3><p>一個根號 + 一個 log 過了欸，什麼鬼 &#x3D; &#x3D;，沒道理吧，如果這樣可以過那 subtask 3 是拿來幹嘛的。</p>
+<p>實際分數: 100 &#x2F; 45.45 &#x2F; 100<br>精神分數: 100 &#x2F; 45.45 &#x2F; 100</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>ad hoc 日常被嗆，不過把心力投在 pC 上是個正確的選擇，猜是分塊也猜對了，好欸，但我覺得要不是我有被教過 Hall 我一定被爆嗆，看了正常複雜度的解以後覺得那個其實是天才解，只是莫名其妙我的 77 分解過了欸。</p>
+<p>最終分數 : 245.45<br>多賺了 23 分，但我感覺真正 IOI 一定不會過這個的，謝謝 pacybwoah 教我 Hall，pB 別人都是大走路欸，好想會解喔QAQ。</p>
+
+    </div>
+</div>
+
+<h1 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h1><h2 id="一些廢話-1"><a href="#一些廢話-1" class="headerlink" title="一些廢話"></a>一些廢話</h2><p>在 9&#x2F;12 用鼎中給的公假打的，最愛鼎中跟大鴻了。<br>現在在邊看 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=5YZZ0tRvHTU">Ina 的四周年直播</a>邊檢討。</p>
+<p>打得超爛 QAQ</p>
+<div class='fold collapsed'>
+    <div class='fold-title'>
+        開始暴雷
+    </div>
+    <div class='fold-content'>
+        <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p><a target="_blank" rel="noopener" href="https://oj.uz/problems/source/171">請自行閱讀</a></p>
+<h2 id="賽中過程"><a href="#賽中過程" class="headerlink" title="賽中過程"></a>賽中過程</h2><h3 id="0-00"><a href="#0-00" class="headerlink" title="0:00"></a>0:00</h3><p>先看 pA，好像怪水的，只要好好處理溢位就好，大概是再蓋兩顆線段樹就可以解決的事吧，就先寫他吧。</p>
+<p>實際分數: 0 &#x2F; 0 &#x2F; 0<br>精神分數: 100 &#x2F; 0 &#x2F; 0</p>
+<h3 id="1-03"><a href="#1-03" class="headerlink" title="1:03"></a>1:03</h3><p>寫完吃了一個 WA，下樓去喝水後就上來看，原來是線段樹忘記大小 * 4，改了以後就 AC 了</p>
+<p>下一個看了 pB，沒什麼感覺，很想把操作往後丟但不會丟，只有暴力的 36。<br>然後 pC 看了以後發現我會在 $3N$ 內找到樹重心跟 hub，有 25 了，後面還要好好想。</p>
+<p>實際分數: 100 &#x2F; 0 &#x2F; 0<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<p>(寫到這邊剛好是 Fan Project 展示的時間欸，我先去看一下)。</p>
+<h3 id="1-47"><a href="#1-47" class="headerlink" title="1:47"></a>1:47</h3><p>pC 25 寫好了，結果拿 0 分?</p>
+<p>燒雞，跑去上個廁所。</p>
+<p>實際分數: 100 &#x2F; 0 &#x2F; 0<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<h3 id="1-59"><a href="#1-59" class="headerlink" title="1:59"></a>1:59</h3><p>痾，忘記是多筆測資， map 沒有 clear &#x3D; &#x3D;。</p>
+<p>實際分數: 100 &#x2F; 0 &#x2F; 25<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<p>這個時候我覺得我 pC 比 pB 有感覺，就一直去想他，感覺 subtask 3, 4 都有一點感覺。</p>
+<h3 id="2-00-3-00"><a href="#2-00-3-00" class="headerlink" title="2:00 ~ 3:00"></a>2:00 ~ 3:00</h3><p>pC 寫了個 dsu 跟想了一下 subtask 3, 4，但可能是太菜或是一直在跟 cot &amp; zzw 聊天的關係兩個好像都差一點的感覺，被嗆 &#x3D; &#x3D;。</p>
+<p>實際分數: 100 &#x2F; 0 &#x2F; 25<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<p>感覺死掉了，衝去寫 pC 的暴力分。</p>
+<h3 id="3-05"><a href="#3-05" class="headerlink" title="3:05"></a>3:05</h3><p>暴力分死掉了!!<br>原本以為是拿前兩個 subtask 的東西竟然只拿到第三個 subtask !</p>
+<p>出大事，慌了!</p>
+<p>實際分數: 100 &#x2F; 16 &#x2F; 25<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<h3 id="3-40"><a href="#3-40" class="headerlink" title="3:40"></a>3:40</h3><p>砸了半個小時，一直改，還是只有拿到第三個 subtask，怎麼會 …</p>
+<p>實際分數: 100 &#x2F; 16 &#x2F; 25<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<h3 id="3-45"><a href="#3-45" class="headerlink" title="3:45"></a>3:45</h3><p>換了一個寫法就有 20 但沒有後面的 16，啥鬼。</p>
+<p>還是不知道錯哪，然後前面的錯了根本不能改成後面的啊 QAQ。</p>
+<p>實際分數: 100 &#x2F; 36 &#x2F; 25<br>精神分數: 100 &#x2F; 36 &#x2F; 25</p>
+<h3 id="4-10"><a href="#4-10" class="headerlink" title="4:10"></a>4:10</h3><p>覺得倒了，就去吃午餐了。</p>
+<h2 id="檢討"><a href="#檢討" class="headerlink" title="檢討"></a>檢討</h2><p>pB 我覺得兩個一模一樣的東西分別錯兩個，我覺得可能其實我根本不知道我在做什麼，然後 pC 兩個不一樣的子題同時想結果都感覺差一點，好氣喔。</p>
+<p>最終分數 : 161<br>整個被嗆，心情好差。</p>
+<p>(打到這邊被 Ina jumpscare)</p>
+<p>好不容易 day 1 靠唬爛打贏很多人， day 2 又被揍回去，果然這麼爛才是我的真面目吧 QAQ。</p>
+
+    </div>
+</div>
+
+<h1 id="兩天總分"><a href="#兩天總分" class="headerlink" title="兩天總分"></a>兩天總分</h1><div class='fold collapsed'>
+    <div class='fold-title'>
+        大大暴雷
+    </div>
+    <div class='fold-content'>
+        <p>總分 : 406.45<br>大概是 Rank 39， Silver。<br>Day 1 pB 有想到 7 次的跟 Day 2 打好一點就有金牌了，但看來實力還是差太多。</p>
+<p>我連 10 年前的人都打不贏 QAQ。</p>
+<p>不過靠著 day 1 唬爛賺超多，day 2 雖然打爛掉還是險勝 guaguaorz，人生成就。</p>
+<p><img src="/../Images/20240913/guaguadrink.png" alt="guaguadrink.png"></p>
+<p>day 2 唯一值得欣慰的是我有一瓶飲料了。</p>
+
+    </div>
+</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2024/09/25/Virtual-KOI-TST-2024/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/08/29/Virtual-BOI-2017/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'http://thecodingpooh.github.io/2024/09/07/Virtual-IOI-2015/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2024/09/07/Virtual-IOI-2015/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://the-coding-poohs-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                Yen Tzu-Chiao | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
